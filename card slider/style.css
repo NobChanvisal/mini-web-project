@@ -145,8 +145,6 @@ button:focus {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   scrollbar-width: 0;
-  transition: all 0.5 ease;
-  transform: scale(1);
 }
 .container::-webkit-scrollbar {
   display: none;
@@ -161,4 +159,26 @@ button:focus {
 .container.dragging .card {
   cursor: grab;
   user-select: none;
+}
+.container :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width:1007px){
+  .right-contain{
+    opacity: 0;
+    overflow: hidden;
+  }
+  .left-contain img{
+    max-height: 550px;
+  }
+  .right-contain{
+    opacity: 0;
+    position: absolute;
+  }
+  .card{
+    display: grid;
+    grid-template-columns: auto;
+  }
 }
