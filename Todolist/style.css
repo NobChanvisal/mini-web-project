@@ -1,0 +1,77 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    /* justify-content: center; */
+}
+.info-contain{
+    border-radius: 10px;
+    padding: 10px;
+    height: auto;
+    background-color: #074173;
+    box-shadow: 0 0 10px #5DEBD7;
+}
+.container,.show{
+    display: grid;
+    grid-template-columns: 300px 250px 100px;
+    gap: 10px;
+    padding: 5px;
+    align-items: center;
+}
+.show{
+    color: white;
+}
+.input-bar,
+.input-date{
+    height: 35px;
+    width: 250px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    color: white;
+    background-color: #1679AB;
+}
+.input-bar::placeholder{
+    color: white;
+}
+.add-button,
+.delete-button{
+    width: 100px;
+    height: 35px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.add-button{
+    background-color: green;
+}
+.delete-button{
+    background-color: red;
+}
+button:hover{
+    opacity: 0.8;
+}
+p{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+}
