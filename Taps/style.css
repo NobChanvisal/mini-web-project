@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background-color: rgb(244, 244, 244);
+}
+section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    text-align: center;
+    margin-bottom: 64px;
+}
+.title h2{
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+.title p{
+    color: #617d98;
+    font-size: 16px;
+    margin: 0 50px;
+}
+.about-center{
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+.about-center img{
+    width: 100%;
+    max-height: 380px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.about{
+    background-color: white;
+    border-radius: 10px;
+}
+.button-contain{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+button{
+    border: none;
+    font-size: 16px;
+    padding: 16px 0;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    background-color: #dae2ec;
+}
+button:first-child{
+    border-top-left-radius: 10px;
+}
+button:last-child{
+    border-top-right-radius: 10px;
+}
+button:hover{
+    color: #378CE7;
+    background-color: #DFF5FF;
+}
+button.active{
+    color: black;
+    background-color: white;
+}
+.content{
+    display: none;
+    padding: 32px 24px;
+}
+.content h4{
+    margin: 0 0 12px;
+    letter-spacing: 2px;
+}
+.content p{
+    color: #617d98;
+    margin: 0 0 20px;
+    line-height: 25px;
+}
+.content.active{
+    display: block;
+}
+@media (max-width: 1000px){
+    .about-center{
+        display: block;
+    }
+    .about{
+        margin-top: 2rem;
+    }
+    .title h2{
+        font-size: 32px;
+    }
+    p{
+        font-size: 14px;
+    }
+}
