@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+}
+/* body{
+    height: 3000px;
+} */
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    transition: background-color 0.4s ease-in-out;
+}
+.header-container{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 5px 30px;
+}
+.section-container{
+    flex: 1;
+}
+img{
+    max-width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.img-for-change{
+    opacity: 0;
+}
+header.scrolled{
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+header:hover{
+    background-color: white;
+}
+header.scrolled a,
+header.scrolled i,
+header:hover a,
+header:hover i{
+    color: black;
+}
+header.scrolled  .img-for-change,
+header:hover .img-for-change{
+    opacity: 1;
+}
+i{
+    font-size: 25px;
+    margin-left: 25px;
+    color: white;
+    cursor: pointer;
+}
+a{
+    margin: 5px 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.4s ease-in-out;
+}
+#home-section{
+    background: url("https://klassywatches.com/cdn/shop/files/dodge-banner_After_2732x_3a4d1f44-1572-4639-8967-85d0a5e8f311_1800x.jpg?v=1677570796");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 690px;
+    display: flex;
+    align-items: end;
+    position: relative;
+}
+.home-info{
+    padding: 70px;
+}
+.home-info .name{
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+button {
+    padding: 14px 28px;
+    margin-top: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    position: relative;
+  }
+  button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: white;
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  button:hover::before,
+  button:focus::before {
+    transform: scaleX(1);
+  }
+  button:focus::before{
+    background-color: transparent;
+  }
+  button {
+    z-index: 1;
+  }
+  button:hover,
+  button:focus {
+    color: black;
+  }
+  #dropdowIcon{
+    color: black;
+    font-size: 50px;
+    background-color: white;
+    position: absolute;
+    left: 46.5%;
+    bottom: -25px;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.5s ease;
+  }
+  #dropdowIcon:hover{
+    transform: scale(1.1);
+  }
+
