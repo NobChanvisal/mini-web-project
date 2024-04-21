@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title,.filter-menu{
+    text-align: center;
+}
+.title{
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: bold;
+    color: #102a42;
+    margin-bottom: 32px;
+}
+.title::after{
+    content: '';
+    height: 3px;
+    background-color: #c59d5f;
+    display: block;
+    margin: 0 55px;
+}
+.filter-menu{
+    margin-bottom: 64px;
+}
+button{
+    font-family: Arial;
+    color: #c59d5f;
+    background-color: transparent;
+    padding: 6px 12px;
+    margin: 0 8px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #c59d5f;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #c59d5f;
+    color: white;
+}
+.menu-grid{
+    margin: 0 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem 2rem;
+}
+.menu-cart{
+    max-width: 40rem;
+    display: grid;
+    grid-template-columns: 225px 1fr;
+    column-gap: 1.25rem;
+}
+.menu-cart img{
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    border: 4px solid #c59d5f;
+    object-fit: cover;
+}
+.info-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.info-top{
+    border-bottom: 1px dotted grey;
+}
+.info-top h2,
+.info-top p{
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+.info-top h2{
+    color: #102a42;
+}
+.info-top p{
+    color: #c59d5f;
+    font-weight: bold;
+}
+.info-top p{
+    font-size: 16px;
+}
+.info-bottom p{
+    padding-top: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: #617d98;
+}
+@media (max-width: 1200px){
+    .menu-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
