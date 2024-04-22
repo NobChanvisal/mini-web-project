@@ -31,8 +31,12 @@
     display: block;
     margin: 0 55px;
 }
-.filter-menu{
+.filter-menu-button{
     margin-bottom: 64px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
 }
 button{
     font-family: Arial;
@@ -98,7 +102,21 @@ button:hover{
     font-family: "Open Sans", sans-serif;
     color: #617d98;
 }
-@media (max-width: 1200px){
+@media (max-width: 768px){
+    .menu-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .menu-cart{
+        max-width: 400px;
+        display: block;
+    }
+    .menu-cart img{
+        min-height: 200px;
+        margin-bottom: 2rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 1200px){
     .menu-grid{
         display: grid;
         grid-template-columns: 1fr;

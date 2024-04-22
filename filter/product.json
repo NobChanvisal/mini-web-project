@@ -1,0 +1,82 @@
+[
+    {
+        "id":1,
+        "img": "image/pancake.jpg",
+        "title": "Buttermilk Pancakes",
+        "price": "1599",
+        "des" : "I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed.",
+        "category": "breakfast"
+    },
+    {
+        "id":2,
+        "img": "image/Dinner Double.jpg",
+        "title": "Diner Double",
+        "price": "1399",
+        "des" : " vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats.",
+        "category": "lunch"
+    },
+    {
+        "id":3,
+        "img": "image/cream.jpg",
+        "title": "Godzilla Milkshake",
+        "price": "699",
+        "des" : " kombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.",
+        "category": "shakes"
+    },
+    {
+        "id":4,
+        "img": "image/Egg.jpeg",
+        "title": "Country Delight",
+        "price": "2099",
+        "des" : " Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut.",
+        "category": "breakfast"
+    },
+    {
+        "id":5,
+        "img": "image/Egg attack.jpg",
+        "title": "Egg Attack",
+        "price": "2299",
+        "des" : " franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up.",
+        "category": "lunch"
+    },
+    {
+        "id":6,
+        "img": "image/Oreo Cream.jpeg",
+        "title": "Oreo Cream",
+        "price": "1899",
+        "des" : " Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday.",
+        "category": "shakes"
+    },
+    {
+        "id":7,
+        "img": "image/Bacon.jpeg",
+        "title": "Bacon Overflow",
+        "price": "899",
+        "des" : " carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird",
+        "category": "breakfast"
+    },
+    {
+        "id":8,
+        "img": "image/American Classic.jpeg",
+        "title": "American Classic",
+        "price": "1299",
+        "des" : " on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut",
+        "category": "lunch"
+    },
+    {
+        "id":9,
+        "img": "image/Quarantine Buddy.jpeg",
+        "title": "Quarantine Buddy",
+        "price": "1699",
+        "des" : " skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.",
+        "category": "shakes"
+    },
+    {
+        "id":10,
+        "img": "image/Steak Dinner.jpeg",
+        "title": "Steak Dinner",
+        "price": "3999",
+        "des" : " skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.",
+        "category": "dinner"
+    }
+]

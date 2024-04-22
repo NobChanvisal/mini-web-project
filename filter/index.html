@@ -4,117 +4,25 @@
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Filter Menu</title>
 </head>
 <body>
   <div class="container">
     <div class="title">Our Menu</div>
-    <div class="filter-menu">
-      <button class="button-all">All</button>
-      <button class="button-breakfast">Breakfast</button>
-      <button class="button-lunch">Lunch</button>
-      <button class="button-shakes">Shakes</button>
-      <button class="button-dinner">Dinner</button>
+    <div class="filter-menu-button">
+      <button class="filter-button" data-id="all">All</button>
+      <button class="filter-button" data-id="breakfast">Breakfast</button>
+      <button class="filter-button" data-id="lunch">Lunch</button>
+      <button class="filter-button" data-id="shakes">Shakes</button>
+      <button class="filter-button" data-id="dinner">Dinner</button>
     </div>
     
     <!-- Corrected menu-grid with proper closing tag -->
-    <div class="menu-grid">
+    <div class="menu-grid js-menu-grid">
       <!-- Menu Item 1 -->
-      <div class="menu-cart">
-        <img src="image/pancake.jpg" alt="Pancake" />
-        <div class="menu-info">
-          <div class="info-top">
-            <h2>Buttermilk Pancakes</h2>
-            <p>$15.99</p>
-          </div>
-          <div class="info-bottom">
-            <p>
-              I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed.
-            </p>
-          </div>
-        </div>
-      </div>
       
-      <!-- Menu Item 2 -->
-      <div class="menu-cart">
-        <img src="image/Dinner Double.jpg" alt="Diner Double" />
-        <div class="menu-info">
-          <div class="info-top">
-            <h2>Diner Double</h2>
-            <p>$13.99</p>
-          </div>
-          <div class="info-bottom">
-            <p>
-              vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats.
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Menu Item 3 -->
-      <div class="menu-cart">
-        <img src="image/cream.jpg" alt="Godzilla Milkshake" />
-        <div class="menu-info">
-          <div class="info-top">
-            <h2>Godzilla Milkshake</h2>
-            <p>$6.99</p>
-          </div>
-          <div class="info-bottom">
-            <p>
-              kombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Menu Item 4 -->
-      <div class="menu-cart">
-        <img src="image/Egg.jpeg" alt="Country Delight" />
-        <div class="menu-info">
-          <div class="info-top">
-            <h2>Country Delight</h2>
-            <p>$20.99</p>
-          </div>
-          <div class="info-bottom">
-            <p>
-              Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut.
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Menu Item 5 -->
-      <div class="menu-cart">
-        <img src="image/Egg attack.jpg" alt="Egg Attack" />
-        <div class="menu-info">
-          <div class="info-top">
-            <h2>Egg Attack</h2>
-            <p>$22.99</p>
-          </div>
-          <div class="info-bottom">
-            <p>
-              franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up.
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Menu Item 6 -->
-      <div class="menu-cart">
-        <img src="image/Oreo Cream.jpeg" alt="Oreo Cream" />
-        <div class="menu-info">
-          <div class="info-top">
-            <h2>Oreo Cream</h2>
-            <p>$18.99</p>
-          </div>
-          <div class="info-bottom">
-            <p>
-              Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday.
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
+  <script src="product.js"></script>
 </body>
 </html>
