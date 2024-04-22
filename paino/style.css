@@ -1,0 +1,58 @@
+@import url(
+'https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    margin-top: 50px;
+    background-color: lightblue;
+    
+}
+.header{
+    margin: 0 30px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.paino-key-list{
+    list-style: none;
+    display: flex;
+    margin: 30px;
+}
+.paino-key{
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    text-transform: uppercase;
+    border: 1px solid rgb(71, 71, 71);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.white{
+    background-color: white;
+    border-radius: 5px;
+    width: 80px;
+    height: 220px;
+}
+.black{
+    background-color: black;
+    width: 40px;
+    height: 130px;
+    color: white;
+    z-index: 2;
+    margin: 0 -20px 0 -20px;
+}
+.paino-key span{
+    padding-bottom: 20px;
+}
+

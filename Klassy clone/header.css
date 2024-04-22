@@ -130,9 +130,12 @@ button {
   button {
     z-index: 1;
   }
-  button:hover,
-  button:focus {
+  button:hover
+    {
     color: black;
+  }
+  .shopNow-button:focus{
+    color: white;
   }
   #dropdowIcon{
     color: black;
