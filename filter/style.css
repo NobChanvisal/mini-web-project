@@ -115,6 +115,14 @@ button:hover{
         min-height: 200px;
         margin-bottom: 2rem;
     }
+    .filter-menu-button{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        row-gap: 1rem;
+    }
+    button{
+        font-size: 70%;
+    }
 }
 @media (min-width: 768px) and (max-width: 1200px){
     .menu-grid{
