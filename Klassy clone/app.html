@@ -1,45 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="product.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/product.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <section id="home-section">
-        <header>
-            <div class="header-container">
-                <div class="left-section .section-container">
-                    <a href="">Watches</a>
-                    <a href="">Golden Concept</a>
-                    <a href="">His & Hers</a>
-                    <a href="">Sunglasses</a>
-                </div>
-                <div class="image-group">
-                    <img src="https://klassywatches.com/cdn/shop/files/Artboard_3_3_100x.png?v=1614361108" alt="">
-                    <img src="https://klassywatches.com/cdn/shop/files/Artboard_3_2_213b1bea-2b74-4aab-86a5-1bfb64acc4a5_100x.png?v=1614361108" alt="" class="img-for-change">
-                </div>
-                <div class="right-section .section-container">
-                    <div class="group-icon">
-                        <i class='bx bx-user'></i>
-                        <i class='bx bx-search'></i>
-                        <i class='bx bx-shopping-bag'></i>
-                    </div>
-                </div>      
+      <header>
+        <div class="header-container">
+          <div class="left-section .section-container">
+            <a href="">Watches</a>
+            <a href="">Golden Concept</a>
+            <a href="">His & Hers</a>
+            <a href="">Sunglasses</a>
+          </div>
+          <div class="image-group">
+            <img
+              src="https://klassywatches.com/cdn/shop/files/Artboard_3_3_100x.png?v=1614361108"
+              alt=""
+            />
+            <img
+              src="https://klassywatches.com/cdn/shop/files/Artboard_3_2_213b1bea-2b74-4aab-86a5-1bfb64acc4a5_100x.png?v=1614361108"
+              alt=""
+              class="img-for-change"
+            />
+          </div>
+          <div class="right-section .section-container">
+            <div class="group-icon">
+              <i class="bx bx-user"></i>
+              <i class="bx bx-search"></i>
+              <i class="bx bx-shopping-bag"></i>
             </div>
-        </header>
-        <div class="home-info">
-            <div class="name">Blade Hellcat</div>
-            <button class="shopNow-button">Shop Now</button>
-            <a href="#product-section"><i class='bx bx-chevron-down' id="dropdowIcon"></i></a>
+          </div>
         </div>
+      </header>
+      <div class="home-info">
+        <div class="name">Blade Hellcat</div>
+        <button class="tranform-button shopNow-button">Shop Now</button>
+        <a href="#product-section"
+          ><i class="bx bx-chevron-down" id="dropdowIcon"></i
+        ></a>
+      </div>
     </section>
     <section id="product-section">
-
+      <div class="product-container">
+        <div class="product-header">
+          <h3>FEATURED COLLECTION</h3>
+          <div class="product-btn-header">
+            <button
+              class="best-seller-button js-button-header active"
+              data-id="best-seller"
+            >
+              Best Sellers
+            </button>
+            <button
+              class="new-arrival-button js-button-header"
+              data-id="new-arrival"
+            >
+              New Arrival
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="product-item-grid active js-item-grid" id="best-seller"></div>
+      <div
+        class="product-item-grid js-new-arrival-item-grid"
+        id="new-arrival"
+      ></div>
+      <button class="tranform-button view-all-button">View All</button>
     </section>
-    <script src="./script.js"></script>
-</body>
+    <script src="javascript/script.js"></script>
+    <script src="javascript/product.js"></script>
+    <script src="javascript/newArrival.js"></script>
+    <script src="javascript/productTap.js"></script>
+  </body>
 </html>

@@ -1,0 +1,22 @@
+[
+    {
+        "img" : "https://klassywatches.com/cdn/shop/files/1_3_800x.png?v=1694110929",
+        "name": "Zinvo Blade Alpha",
+        "price": "41000"
+    },
+    {
+        "img": "https://klassywatches.com/cdn/shop/files/s160xcopy3_800x.png?v=1694111107",
+        "name":"ZINVO BLADE COBALT GEM",
+        "price": "41000"
+    },
+    {
+        "img": "https://klassywatches.com/cdn/shop/files/s58x1_800x.png?v=1694111082",
+        "name": "ZINVO BLADE BLACK MAGIC GEM",
+        "price": "41000"
+    },
+    {
+        "img": "https://klassywatches.com/cdn/shop/products/s1_800x.png?v=1612929669",
+        "name": "ZINVO BLADE FURY GEM",
+        "price":"41000"
+    }
+]

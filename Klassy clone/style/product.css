@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#product-section {
+  width: 100vw;
+  height: 100vh;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.product-container
+/* .product-header,
+.product-cart */ {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-header {
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+.product-header h3 {
+  color: #1c1b1b;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+.product-btn-header button {
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  padding-bottom: 8px;
+  cursor: pointer;
+  /* border-bottom: 1px solid black; */
+}
+.new-arrival-button {
+  margin-left: 45px;
+}
+.js-button-header.active {
+  border-bottom: 1px solid black;
+}
+.product-item-grid {
+  animation: transitionIn 3s;
+  display: none;
+}
+.product-item-grid.active {
+  width: 100vw;
+  padding: 0 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 45px;
+}
+.product-cart {
+  width: 100%;
+  flex-direction: column;
+}
+.product-image {
+  width: 100%;
+}
+.product-image .item-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.item-image:hover {
+  scale: 1.1;
+  rotate: 8deg;
+}
+.product-info {
+  margin-top: 20px;
+  font-size: 12px;
+  flex-direction: column;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.product-info .product-name {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 5px;
+}
+.product-info span {
+  color: #6a6a6a;
+}
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 1010px) {
+  .product-item-grid.active {
+    width: 100vw;
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 45px;
+  }
+}
+.view-all-button {
+  margin-top: 80px;
+  color: black;
+  border: 1px solid black;
+}
+.view-all-button::before{
+  background-color: black;
+}
+.view-all-button:hover {
+  color: rgb(255, 255, 255);
+}
+.view-all-button:focus {
+  color: rgb(0, 0, 0);
+}

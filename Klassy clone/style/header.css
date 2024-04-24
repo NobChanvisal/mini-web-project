@@ -9,7 +9,7 @@
     height: 3000px;
 } */
 header{
-    width: 100%;
+    width: 100vw;
     position: fixed;
     top: 0;
     left: 0;
@@ -17,7 +17,7 @@ header{
     transition: background-color 0.4s ease-in-out;
 }
 .header-container{
-    width: 100%;
+    width: 100vw;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -29,7 +29,7 @@ header{
 .section-container{
     flex: 1;
 }
-img{
+.image-group img{
     max-width: 100px;
     position: absolute;
     top: 50%;
@@ -76,10 +76,8 @@ a{
 #home-section{
     background: url("https://klassywatches.com/cdn/shop/files/dodge-banner_After_2732x_3a4d1f44-1572-4639-8967-85d0a5e8f311_1800x.jpg?v=1677570796");
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    width: 100%;
+    background-position: center; 
+    width: 100vw;
     height: 690px;
     display: flex;
     align-items: end;
@@ -96,7 +94,7 @@ a{
     color: white;
     text-transform: uppercase;
 }
-button {
+.tranform-button {
     padding: 14px 28px;
     margin-top: 25px;
     letter-spacing: 2px;
@@ -107,7 +105,7 @@ button {
     cursor: pointer;
     position: relative;
   }
-  button::before {
+  .tranform-button::before {
     content: "";
     position: absolute;
     top: 0;
@@ -120,21 +118,21 @@ button {
     transform: scaleX(0);
     transform-origin: left;
   }
-  button:hover::before,
-  button:focus::before {
+  .tranform-button:hover::before,
+  .tranform-button:focus::before {
     transform: scaleX(1);
   }
-  button:focus::before{
+  .tranform-button:focus::before{
     background-color: transparent;
   }
-  button {
+  .tranform-button {
     z-index: 1;
   }
-  button:hover
+  .tranform-button:hover
     {
     color: black;
   }
-  .shopNow-button:focus{
+  .tranform-button:focus{
     color: white;
   }
   #dropdowIcon{
