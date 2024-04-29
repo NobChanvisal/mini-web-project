@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#about-section{
+    height: 100vh;
+}
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    margin: 72px;
+    padding: 70px 15px;
+    font-family: "Roboto", sans-serif;
+}
+.about-container img{
+    width: 100%;
+    max-width: 520px;
+    height: 100%;
+    object-fit: cover;
+}
+.about-info{
+    padding: 35px 0 35px 35px;
+    color: white;
+}
+.about-info h2{
+    font-size: 50px;
+    color: #ff7f50;
+    margin-bottom: 25px;
+}
+.about-info h4{
+    margin-bottom: 30px;
+    color: #999999;
+    font-size: 20px;
+}
+.information{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+.title-information p{
+    margin-bottom: 15px;
+}
+.data-of-information span{
+    color: #999999;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    display: block;
+}
+.download-cv-button{
+    background-color: #ff7f50;
+    border: none;
+    color: white;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.download-cv-button:hover{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 0;
+    margin-right: 0;
+}

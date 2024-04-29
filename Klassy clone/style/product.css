@@ -46,6 +46,7 @@
   margin-left: 45px;
 }
 .js-button-header.active {
+  pointer-events: none;
   border-bottom: 1px solid black;
 }
 .product-item-grid {

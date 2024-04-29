@@ -1,0 +1,26 @@
+#resume-section{
+    height: 100vh;
+}
+.resume-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+    padding: 75px 0;
+}
+.tap-button{
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    cursor: pointer;
+    margin: 0 30px;
+    /* border-bottom: 1px solid black; */
+}
+.tap-button.active{
+    border-bottom: 2px solid rgb(52, 52, 243);
+}
