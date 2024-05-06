@@ -31,7 +31,7 @@ li,a{
     list-style: none;
     text-decoration: none;
 }
-ul li{
+header nav ul li{
     padding: 5px 20px;
     margin: 0 5px;
 }
@@ -41,14 +41,14 @@ header i{
     color: white;
     opacity: 0;
 }
-ul li a{
+header nav ul li a{
     letter-spacing: 2px;
     color: white;
     font-size: 16px;
     padding-bottom: 5px;
     transition: all 0.2s ease;
 }
-ul li a:hover{
+header nav ul li a:hover{
     color: rgb(52, 52, 243);
     border-bottom: 3px solid rgb(52, 52, 243);
 }
@@ -203,7 +203,7 @@ nav.click{
     header i {
         opacity: 1;
     }
-    nav {
+    header nav {
         position: absolute;
         right: 0;
         top: 0;
@@ -214,24 +214,24 @@ nav.click{
         overflow: hidden;
         opacity: 0;
     }
-    nav ul {
+    header nav ul {
         padding: 0 10px;
         padding-bottom: 20px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
     }
-    nav ul li {
+    header nav ul li {
         width: 100%;
         margin: 0;
         padding: 10px 20px;
         margin-top: 10px;
         border-radius: 5px;
     }
-    nav ul li a {
+    header nav ul li a {
         color: white;
     }
-    nav ul li a:hover {
+    header nav ul li a:hover {
         color: white;
         border: none;
     }

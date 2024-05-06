@@ -1,82 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style/home.css">
-    <link rel="stylesheet" href="style/about.css">
-    <link rel="stylesheet" href="style/resume.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/home.css" />
+    <link rel="stylesheet" href="style/about.css" />
+    <link rel="stylesheet" href="style/resume.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul class="nav-link">
-                <li><a href="#home-section">Home</a></li>
-                <li><a href="#about-section">About</a></li>
-                <li><a href="#resume-section">Resume</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Project</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-        <i class='bx bx-menu' id="menu"></i>
+      <nav>
+        <ul class="nav-link">
+          <li><a href="#home-section">Home</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#resume-section">Resume</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Project</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+      <i class="bx bx-menu" id="menu"></i>
     </header>
     <section id="home-section">
-        <div class="home-info">
-            <img src="visal .png" alt="">
-            <div class="name-info">
-                <p>Hello!!</p>
-                <h5>I'm Chanvisal Nob</h5>
-                <div class="animated-text">
-                    I'm a <span></span>
-                </div>
-            </div>
-            <div class="button-on-home">
-                <a href="#about-section"><button class="box-button read-more-button">Read More</button></a>
-            </div>
+      <div class="home-info">
+        <img src="visal .png" alt="" />
+        <div class="name-info">
+          <p>Hello!!</p>
+          <h5>I'm Chanvisal Nob</h5>
+          <div class="animated-text">I'm a <span></span></div>
         </div>
+        <div class="button-on-home">
+          <a href="#about-section"
+            ><button class="box-button read-more-button">Read More</button></a
+          >
+        </div>
+      </div>
     </section>
     <section id="about-section">
-        <div class="about-container">
-            <img src="aboutImage.jpg" alt="">
-            <div class="about-info">
-                <h2>About Me</h2>
-                <h4>
-                    Hi there, I am Chanvisal. I am Programmer, Freelancer
-                    and I would like to share with you some of
-                    my ideas.
-                </h4>
-                <div class="information">
-                    <div class="title-information">
-                        <p>Name:</p>
-                        <p>Date of birth:</p>
-                        <p>Address:</p>
-                        <p>Email:</p>
-                        <p>Phone:</p>
-                    </div>
-                    <div class="data-of-information">
-                        <span>Chanvisal Nob</span>
-                        <span>May 15, 2004</span>
-                        <span>Kampot province Camobodia</span>
-                        <span>chanvisal.nob09@gmail.com</span>
-                        <span>+855 965 920 585</span>
-                    </div>
-                </div>
-                <button class="box-button download-cv-button">Download CV</button>
+      <div class="about-container">
+        <img src="aboutImage.jpg" alt="" />
+        <div class="about-info">
+          <h2>About Me</h2>
+          <h4>
+            Hi there, I am Chanvisal. I am Programmer, Freelancer and I would
+            like to share with you some of my ideas.
+          </h4>
+          <div class="information">
+            <div class="title-information">
+              <p>Name:</p>
+              <p>Date of birth:</p>
+              <p>Address:</p>
+              <p>Email:</p>
+              <p>Phone:</p>
             </div>
+            <div class="data-of-information">
+              <span>Chanvisal Nob</span>
+              <span>May 15, 2004</span>
+              <span>Kampot province Camobodia</span>
+              <span>chanvisal.nob09@gmail.com</span>
+              <span>+855 965 920 585</span>
+            </div>
+          </div>
+          <button class="box-button download-cv-button">Download CV</button>
         </div>
+      </div>
     </section>
     <section id="resume-section">
-        <div class="resume-container">
-            <div class="resume-tab">
-                <button class="tap-button active education-tap">Education</button>
-                <button class="tap-button education-tap">Work Experience</button>
-                <button class="tap-button education-tap">Skill</button>
+      <div class="resume-container">
+        <div class="resume-tab">
+          <button class="tap-button active education-tap" data-id="education">Education</button>
+          <button class="tap-button education-tap" data-id="experience">Work Experience</button>
+          <button class="tap-button education-tap" data-id="skill">Skill</button>
+        </div>
+        <div class="resume-center">
+          <div class="content active" id="education">
+            <div class="resume-card">
+              <div class="card-title">
+                <h4>Computer science from <span>Royal University of Phnom Penh</span></h4>    
+              </div>
+                <p class="study-year">Present</p>
+                <p class="study-info">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum
+                </p>
+            </div>
+
+            <div class="resume-card">
+                <div class="card-title">
+                  <h4>PhotoShop from <span>CITO Coputer center</span></h4>  
+                </div>
+                  <p class="study-year">December, 2023</p>
+                  <p class="study-info">
+                    It is a long established fact that a reader will be distracted
+                    by the readable content of a page when looking at its layout.
+                    The point of using Lorem Ipsum
+                  </p>
+            </div>
+            
+            <div class="resume-card">
+                <div class="card-title">
+                  <h4>C/C++ Programming from <span>Ant trainning center</span></h4>  
+                </div>
+                  <p class="study-year">August, 2022</p>
+                  <p class="study-info">
+                    It is a long established fact that a reader will be distracted
+                    by the readable content of a page when looking at its layout.
+                    The point of using Lorem Ipsum
+                  </p>
+            </div>
+
+            <div class="resume-card">
+                <div class="card-title">
+                  <h4>Front End from <span>CITO Coputer center</span></h4>  
+                </div>
+                  <p class="study-year">March, 2024</p>
+                  <p class="study-info">
+                    It is a long established fact that a reader will be distracted
+                    by the readable content of a page when looking at its layout.
+                    The point of using Lorem Ipsum
+                  </p>
             </div>
         </div>
+          <div class="content" id="experience">
+            <div class="resume-card experience-card">
+              <div class="card-title">
+                <h4>Computer Teacher at <span>CITO Coputer center</span></h4>  
+              </div>
+                <p class="study-year">Present</p>
+                <ul class="study-info">
+                  <li>Introduce students to effective computer skills including typing.</li>
+                  <li>Show students how computers tablets and phones can help learning.</li>
+                  <li>Trained and developed students' skill in C++, C, HTML, CSS, Javascript, PhotoShop, Ms.office.</li>
+                  <li>Quickly learned new skill and applied them to daily tasks, improving efficiency and productivity.</li>
+                  <li>Processed software and hardware by coordinating user setups, installations and upgrades.</li>
+                  <li>Set up computers and networking systems and delivered step-by-step instructions on basice use</li>
+                </ul>
+            </div>
+
+            <div class="resume-card experience-card">
+              <div class="card-title">
+                <h4>Stock Controller at <span>Zando Camobodia</span></h4>  
+              </div>
+                <p class="study-year">November, 2022 - Joly, 2023</p>
+                <ul class="study-info">
+                  <li>Customer Services and Teamwork</li>
+                  <li>Count item that transfer from MWH and other</li>
+                  <li>Responsible of working with system for receive item and transfer</li>
+                  <li>Make sure all item drop to sale have chip and price label</li>
+                  <li>Find the problem of lose over and unseen item in system</li>
+                  <li>Sometime fix label printer when it error</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <script src="resume.js"></script>
     <script src="header.js"></script>
-</body>
+  </body>
 </html>

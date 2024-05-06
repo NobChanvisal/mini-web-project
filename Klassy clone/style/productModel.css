@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.zinvo{
+    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/files/Zinvo-Gem-29_After3_1_750x960_crop_center.jpg?v=1649877204");
+}
+.milano{ 
+    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/files/D1_Milano_-_DENIM_UTDJ01_-_Blue_AMBIENT_750x960_crop_center.jpg?v=1614344010");
+}
+.coniche{
+    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/files/blue-01_750x960_crop_center.jpg?v=1614320044");
+}
+.mstr{
+    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/collections/LIFESTYL-007_2048x2048_0cd1b5ee-2e68-4c05-bf80-5099acdfed94_750x800_crop_center.jpg?v=1658897563");
+}
+.electrician{
+    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/collections/ELZ_STILL_NEONZ_7-2_1024x1024_2x_55f3c574-9385-4e76-86f5-3629b067834a_750x960_crop_center.png?v=1574477195");
+}
+.vilhelm{
+    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/collections/45798261_1037159443130686_1201369534569644032_o_1024x1024_8bd24925-4eae-46ea-8b89-c64e97187bec_750x960_crop_center.jpg?v=1544694499");
+}
+.product-model-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    margin: 15px 30px;
+}
+.model-card{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: end;
+    background-position: center;
+    background-size: cover;
+    transition: background-size 2s ease-in-out; 
+    cursor: pointer;
+}
+.model-card:hover{
+    background-size: 150%;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+.model-card-info{
+    padding: 50px;
+}
+.model-card-info .model-name{
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
