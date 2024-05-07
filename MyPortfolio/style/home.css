@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #001523;
 }
@@ -176,6 +179,10 @@ nav.click{
 nav.click{
     opacity: 1;
 }
+
+
+
+
 @media (max-width: 600px) {
     .home-info h5 {
         font-size: 35px;
