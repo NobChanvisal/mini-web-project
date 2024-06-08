@@ -3,9 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+section{
+  height: 100hv;
+  width: 100w;
+}
+body{
+  background-color: rgb(232, 232, 232);
+}
 #product-section {
   width: 100vw;
   height: 100vh;
+  margin-top: 30px;
   padding: 100px 0;
   display: flex;
   align-items: center;
@@ -104,15 +112,6 @@
     transform: translateY(0);
   }
 }
-@media (max-width: 1010px) {
-  .product-item-grid.active {
-    width: 100vw;
-    padding: 0 25px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 45px;
-  }
-}
 .view-all-button {
   margin-top: 80px;
   color: black;
@@ -127,3 +126,296 @@
 .view-all-button:focus {
   color: rgb(0, 0, 0);
 }
+/* product model */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.zinvo{
+  background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/files/f8BF9hBy_750x960_crop_center.jpg?v=1716024283");
+}
+.milano{ 
+  background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/files/K1tyoPe4_750x960_crop_center.jpg?v=1716024314");
+}
+.coniche{
+  background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/files/corniche-heritage-chronograph-rose-gold-with-cream-dial-39mm-314-1695283421-7695_750x960_crop_center.webp?v=1716024342");
+}
+.mstr{
+  background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/files/zCnd8SiQ_750x960_crop_center.jpg?v=1716025134");
+}
+.electrician{
+  background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/files/JipB4taA_750x960_crop_center.jpg?v=1716025000");
+}
+.vilhelm{
+  background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/files/1D40D710-816A-433C-A21E-283EC3F107A9_1024x1024_34adbfc9-77ff-4acd-847a-058b3c8f7f2a_750x960_crop_center.webp?v=1716024868");
+}
+.y24{
+  background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/files/Shibyua49-Webb_bf107d1a-0eb3-4b65-930c-28acc2a719de_750x960_crop_center.webp?v=1716025588");
+}
+.daper{
+  background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/files/pwBXSb-g_750x960_crop_center.jpg?v=1716025429");
+}
+.rec{
+  background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/files/p51-eleanor-slider-9_750x960_crop_center.jpg?v=1614361354");
+}
+.product-model-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+  margin: 15px 30px;
+}
+.model-card{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: end;
+  background-position: center;
+  background-size: cover;
+  transition: background-size 2s ease-in-out; 
+  cursor: pointer;
+}
+.model-card:hover{
+  background-size: 120%;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.model-card-info{
+  padding: 50px;
+}
+.model-card-info .model-name{
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+/* future section */
+
+.future-container,.future-product,
+.future-product-info,.slider-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.future-container{
+  width: 100%;
+  padding: 80px 0;
+  flex-direction: column;
+}
+.future-product{
+  margin: 0 98px;
+  flex-direction: row;
+}
+.future-container h2,.slider-container h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  padding-bottom: 70px;
+}
+.future-product-info{
+  margin-left: 80px;
+  text-align: start;
+  align-items: start;
+  flex-direction: column;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.future-product img{
+  width: 400px;
+}
+.future-brand{
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.furure-name{
+  font-size: 18px;
+}
+.future-product-info span{
+  margin-top: 15px;
+  font-size: 16px;
+  color: #6a6a6a;
+}
+.buy-it-button{
+  width: 400px;
+  padding: 14px 28px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+/*  */
+.slider-container{
+  flex-direction: column;
+}
+.product-info,
+.right-contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+  /* background-color: lightblue; */
+  padding: 0 130px;
+}
+.card {
+  scroll-snap-align: start;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* background-color: lightcoral; */
+}
+.left-contain img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.right-contain {
+  margin: 0 80px;
+}
+.main-image {
+  height: 250px;
+}
+.product-image,
+.product-rotate-image {
+  width: 250px;
+}
+.product-info {
+  margin-top: 20px;
+}
+.product-info .product-name {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: black;
+  margin-bottom: 5px;
+}
+.product-info span {
+  font-size: 12px;
+  color: #6a6a6a;
+}
+.view-product-button {
+  padding: 14px 28px;
+  margin-top: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+}
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: white;
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+button:hover::before,
+button:focus::before {
+  transform: scaleX(1);
+}
+
+button {
+  z-index: 1;
+}
+button:hover,
+button:focus {
+  color: black;
+}
+.wrapper i {
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  font-size: 25px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  top: 50%;
+  color: grey;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+}
+.wrapper i:first-child {
+  left: 40px;
+}
+.wrapper i:last-child {
+  right: 40px;
+}
+.wrapper .pro-slider-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100%) - 12px);
+  gap: 15px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
+}
+.pro-slider-container::-webkit-scrollbar {
+  display: none;
+}
+.pro-slider-container.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.pro-slider-container.no-transition {
+  scroll-behavior: auto;
+}
+.pro-slider-container.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.pro-slider-container :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width:1007px){
+  .right-contain{
+    opacity: 0;
+    overflow: hidden;
+  }
+  .left-contain img{
+    max-height: 550px;
+  }
+  .right-contain{
+    opacity: 0;
+    position: absolute;
+  }
+  .card{
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 1010px) {
+  .product-item-grid.active {
+    width: 100vw;
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 45px;
+  }
+  .model-card{
+    height: 500px;
+  }
+  .product-model-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 15px 30px;
+  }
+}
+

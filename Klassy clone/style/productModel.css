@@ -1,25 +1,34 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 .zinvo{
-    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/files/Zinvo-Gem-29_After3_1_750x960_crop_center.jpg?v=1649877204");
+    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/files/f8BF9hBy_750x960_crop_center.jpg?v=1716024283");
 }
 .milano{ 
-    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/files/D1_Milano_-_DENIM_UTDJ01_-_Blue_AMBIENT_750x960_crop_center.jpg?v=1614344010");
+    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/files/K1tyoPe4_750x960_crop_center.jpg?v=1716024314");
 }
 .coniche{
-    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/files/blue-01_750x960_crop_center.jpg?v=1614320044");
+    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/files/corniche-heritage-chronograph-rose-gold-with-cream-dial-39mm-314-1695283421-7695_750x960_crop_center.webp?v=1716024342");
 }
 .mstr{
-    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/collections/LIFESTYL-007_2048x2048_0cd1b5ee-2e68-4c05-bf80-5099acdfed94_750x800_crop_center.jpg?v=1658897563");
+    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/files/zCnd8SiQ_750x960_crop_center.jpg?v=1716025134");
 }
 .electrician{
-    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/collections/ELZ_STILL_NEONZ_7-2_1024x1024_2x_55f3c574-9385-4e76-86f5-3629b067834a_750x960_crop_center.png?v=1574477195");
+    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/files/JipB4taA_750x960_crop_center.jpg?v=1716025000");
 }
 .vilhelm{
-    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/collections/45798261_1037159443130686_1201369534569644032_o_1024x1024_8bd24925-4eae-46ea-8b89-c64e97187bec_750x960_crop_center.jpg?v=1544694499");
+    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/files/1D40D710-816A-433C-A21E-283EC3F107A9_1024x1024_34adbfc9-77ff-4acd-847a-058b3c8f7f2a_750x960_crop_center.webp?v=1716024868");
+}
+.y24{
+    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/files/Shibyua49-Webb_bf107d1a-0eb3-4b65-930c-28acc2a719de_750x960_crop_center.webp?v=1716025588");
+}
+.daper{
+    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/files/pwBXSb-g_750x960_crop_center.jpg?v=1716025429");
+}
+.rec{
+    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("https://klassywatches.com/cdn/shop/files/p51-eleanor-slider-9_750x960_crop_center.jpg?v=1614361354");
 }
 .product-model-grid{
     display: grid;
@@ -38,7 +47,7 @@
     cursor: pointer;
 }
 .model-card:hover{
-    background-size: 150%;
+    background-size: 120%;
     -webkit-transition: all 0.3s ease-in-out;
 }
 .model-card-info{
@@ -50,4 +59,4 @@
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
-}
+} */

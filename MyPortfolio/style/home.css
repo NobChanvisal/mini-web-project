@@ -55,9 +55,12 @@ header nav ul li a:hover{
     color: rgb(52, 52, 243);
     border-bottom: 3px solid rgb(52, 52, 243);
 }
-#home-section{
+section{
     width: 100vw;
     height: 100vh;
+}
+#home-section{
+    
     background: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.9)),url("background.jpg");
     background-size: cover;
     background-position: center;
@@ -176,7 +179,7 @@ header nav ul li a:hover{
 nav.click{
     width: 250px;
 }
-nav.click{
+nav.clicked{
     opacity: 1;
 }
 
@@ -202,8 +205,375 @@ nav.click{
         height: 170px;
     }
 }
+/* resume section */
+.resume-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0;
+    padding: 75px 0;
+}
+.tap-button{
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    cursor: pointer;
+    margin: 0 30px;
+    /* border-bottom: 1px solid black; */
+}
+.tap-button.active,
+.tap-button:hover{
+    border-bottom: 2px solid #ff7f50;
+}
+.resume-center .content{
+    display: none;
+    animation: transitionIn 2s;
+}
+.resume-center .content.active{
+    width: 100%;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    font-family: "Roboto", sans-serif;
+    padding: 50px 30px;
+    align-items: start;
+    justify-items: center;
+}
+.resume-card{
+    width: 100%;
+    max-width: 510px;
+    padding: 25px 30px;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    box-shadow: rgba(50, 50, 93, 0.6) 0px 6px 12px -2px, rgba(0, 0, 0, 0.6) 0px 3px 7px -3px;
+}
+.experience-card{
+    box-shadow: none;
+    border: 1px solid #ff7f50;
+}
+.resume-card:hover{
+   transform: scale(1.1);
+}
+.card-title{
+    text-transform: capitalize;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.card-title h4{
+    color: white;
+}
+.card-title span{
+    color: #ff7f50;
+    margin-left: 5px;
+}
+.study-year{
+    font-size: 14px;
+    color: #ff7f50;
+    margin: 10px 0;
+}
+.study-info{
+    display: block;
+    color: white;
+    font-size: 14px;
+    padding-left: 25px;
+}
+.study-info li{
+    list-style-type: circle;
+    color: white;
+    padding: 5px;
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-@media (max-width: 780px) {
+#skill{
+    width: 100%;
+    padding: 30px;
+}
+.heading{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+.progress-container{
+    width: 100%;
+}
+.technical-bar{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.technical-bar i{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.technical-bar .bar .info span{
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.technical-bar .bar .progress-line{
+    width: 450px;
+    height: 5px;
+    position: relative;
+    border-radius: 10px;
+    margin-top: 5px;
+    background-color: black;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+@keyframes animate{
+    100%{
+        transform: scale(1);
+    }
+}
+.technical-bar .bar .progress-line span{
+    height: 100%;
+    background-color: #ff7f50;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scale(0);
+    transform-origin: left;
+}
+.progress-line.html span{
+    width: 90%;
+}
+.progress-line.css span{
+    width: 80%;
+}
+.progress-line.js span{
+    width: 85%;
+}
+.progress-line.react span{
+    width: 50%;
+}
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+.progress-line.progress-line.html span::after{
+    content: "90%";
+}
+.progress-line.progress-line.css span::after{
+    content: "80%";
+}
+
+.progress-line.progress-line.js span::after{
+    content: "85%";
+}
+
+.progress-line.progress-line.react span::after{
+    content: "50%";
+}
+.progress-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: black;
+    top: -12px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+.circular-container{
+    width: 100%;
+}
+.radial-bars{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.radial-bars .radial-bar{
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.radial-bars .radial-bar svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 160px;
+    /* padding: 10px; */
+}
+.radial-bars .radial-bar .progress-bar{
+    stroke-width: 10px;
+    stroke: black;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
+@keyframes animate-bar{
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+.path{
+    stroke-width: 10;
+    stroke: #ff7f50;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+.path-1{animation: animate-path1 1s 1s linear forwards;}
+.path-2{animation: animate-path2 1s 1s linear forwards;}
+.path-3{animation: animate-path3 1s 1s linear forwards;}
+.path-4{animation: animate-path4 1s 1s linear forwards;}
+@keyframes animate-path1{
+    100%{
+        stroke-dashoffset: 50;
+    }
+}
+@keyframes animate-path2{
+    100%{
+        stroke-dashoffset: 175;
+    }
+}
+@keyframes animate-path3{
+    100%{
+        stroke-dashoffset: 125;
+    }
+}
+@keyframes animate-path4{
+    100%{
+        stroke-dashoffset: 75;
+    }
+}
+.radial-bar .percentage{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation:  showText 0.5 1s linear forwards;
+    opacity: 0;
+}
+.radial-bar .text{
+    color: white;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translate(-50%);
+    animation: showText 0.5s 1s linear forwards;
+
+}
+/* about section */
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    margin: 72px;
+    padding: 70px 15px;
+    font-family: "Roboto", sans-serif;
+}
+.about-container img{
+    width: 100%;
+    max-width: 520px;
+    height: 100%;
+    object-fit: cover;
+}
+.about-info{
+    padding: 35px 0 35px 35px;
+    color: white;
+}
+.about-info h2{
+    font-size: 50px;
+    color: #ff7f50;
+    margin-bottom: 25px;
+}
+.about-info h4{
+    margin-bottom: 30px;
+    color: #999999;
+    font-size: 20px;
+}
+.information{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+.title-information p{
+    margin-bottom: 15px;
+}
+.data-of-information span{
+    color: #999999;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    display: block;
+}
+.download-cv-button{
+    background-color: #ff7f50;
+    border: none;
+    color: white;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.download-cv-button:hover{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 0;
+    margin-right: 0;
+}
+@media (max-width:570px){
+    .about-container
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .about-container img{
+        display: none;
+    }
+}
+@media (max-width: 780px){
     header {
         display: block;
     }
@@ -244,5 +614,51 @@ nav.click{
     }
     nav ul li:hover {
         background-color: rgb(146, 146, 146);
+    }
+
+    /* tab button */
+    .tap-button{
+        margin: 0 10px;
+        font-weight: 250;
+        font-size: 10px;
+    }
+    .resume-center .content.active{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .card-title{
+        font-size: 15px;
+    }
+    .study-year{
+        font-size: 8px;
+    }
+    .study-info{
+        font-size: 12px;
+    }
+    .heading{
+        font-size: 15px;
+    }
+    .radial-bar .text{
+        font-size: 12px;
+    }
+    .technical-bar .bar .progress-line{
+        width: 350px;
+    }
+    /* about */
+    .about-info{
+        padding: 0;
+        padding-left: 10px;
+    }
+    .about-container h2{
+        text-align: center;
+        font-size: 30px;
+    }
+    .about-container h4,
+    .information{
+        font-size: 15px;
+    }
+    .about-container{
+        margin: 0;
+        padding: 30px;
     }
 }
