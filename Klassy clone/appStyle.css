@@ -1,7 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
 }
 section{
   height: 100hv;
@@ -10,6 +12,150 @@ section{
 body{
   background-color: rgb(232, 232, 232);
 }
+header{
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    transition: background-color 0.4s ease-in-out;
+}
+.header-container{
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 5px 30px;
+}
+.section-container{
+    flex: 1;
+}
+.image-group img{
+    max-width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.img-for-change{
+    opacity: 0;
+}
+header.scrolled{
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+header:hover{
+    background-color: white;
+}
+header.scrolled a,
+header.scrolled i,
+header:hover a,
+header:hover i{
+    color: black;
+}
+header.scrolled  .img-for-change,
+header:hover .img-for-change{
+    opacity: 1;
+}
+.group-icon i{
+    font-size: 25px;
+    margin-left: 25px;
+    color: white;
+    cursor: pointer;
+}
+.left-section a{
+    margin: 5px 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.4s ease-in-out;
+}
+#home-section{
+    background: url("https://klassywatches.com/cdn/shop/files/BLADE_DRAGON_1800x.png?v=1716016742");
+    background-size: cover;
+    background-position: center; 
+    width: 100vw;
+    height: 690px;
+    display: flex;
+    align-items: end;
+    position: relative;
+}
+.home-info{
+    padding: 70px;
+}
+.home-info .name{
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+.tranform-button {
+    padding: 14px 28px;
+    margin-top: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    position: relative;
+    font-size: 12px;
+  }
+  .tranform-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: white;
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  .tranform-button:hover::before,
+  .tranform-button:focus::before {
+    transform: scaleX(1);
+  }
+  .tranform-button:focus::before{
+    background-color: transparent;
+  }
+  .tranform-button {
+    z-index: 1;
+  }
+  .tranform-button:hover
+    {
+    color: black;
+  }
+  .tranform-button:focus{
+    color: white;
+  }
+  #dropdowIcon{
+    color: black;
+    font-size: 50px;
+    background-color: white;
+    position: absolute;
+    left: 46.5%;
+    bottom: -25px;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.5s ease;
+  }
+  #dropdowIcon:hover{
+    transform: scale(1.1);
+  }
+
+
 #product-section {
   width: 100vw;
   height: 100vh;
@@ -235,13 +381,23 @@ body{
   font-size: 16px;
   color: #6a6a6a;
 }
-.buy-it-button{
+.buy-it-button,.subscribe-button{
   width: 400px;
   padding: 14px 28px;
   border: none;
   background-color: black;
   color: white;
   cursor: pointer;
+}
+.subscribe-button{
+  width: auto;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.buy-it-button:hover,
+.subscribe-button:hover{
+  color: white;
+  background-color: #323232;
 }
 /*  */
 .slider-container{
@@ -382,6 +538,88 @@ button:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/*  */
+#location-section{
+  padding: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.location-container{
+  max-width: 1100px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+.location-container img{
+  max-width: 730px;
+}
+.location-info{
+  padding: 50px 60px;
+}
+.location-info span,
+.location-container p,
+.location-container h2{
+  margin-bottom: 25px;
+}
+.location-container h2{
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+/* footter-section */
+footer{
+  padding: 80px;
+  background-color: white;
+  color: #6a6a6a;
+  font-size: 14px;
+}
+.footer-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  
+}
+.footer-title{
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  color: black;
+}
+.about-us{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.medai-icon{
+  margin: 15px 0;
+}
+.medai-icon i{
+ 
+  font-size: 18px;
+  padding-right: 20px;
+}
+.footer-menu{
+  list-style: none;
+  text-decoration: none;
+}
+.footer-menu li{
+  padding-bottom: 15px;
+}
+.footer-menu a{
+  text-decoration: none;
+  color: #6a6a6a;
+}
+.newsletter input{
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+.newsletter-info{
+  margin-bottom: 20px;
 }
 @media (max-width:1007px){
   .right-contain{
