@@ -323,7 +323,6 @@ header:hover .img-for-change{
 }
 .model-card:hover{
   background-size: 120%;
-  -webkit-transition: all 0.3s ease-in-out;
 }
 .model-card-info{
   padding: 50px;
