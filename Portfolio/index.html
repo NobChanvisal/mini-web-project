@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <i class="fa-solid fa-bars" id="menu"></i>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home-section">Home</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#resume-section">Resume</a></li>
+          <li><a href="#services-section">Services</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home-section" class="section-center">
+      <div class="home-container">
+        <div class="home-info animate__animated animate__lightSpeedInLeft">
+          <p>Hello!!</p>
+          <h5>I'm Chanvisal Nob</h5>
+          <h1>
+            I'm a
+            <span
+              class="typed"
+              data-typed-items="Designer,Developer,Freelancer"
+            ></span>
+          </h1>
+          <div class="button-on-home">
+            <a href="#about-section"
+              ><button class="tranform-button read-more-button">
+                Read More
+              </button></a
+            >
+          </div>
+        </div>
+        <img
+          class="animate__animated animate__backInRight animate__delay-1s"
+          src="programmer.png"
+          alt="Profile picture"
+        />
+      </div>
+    </section>
+    <section id="about-section" class="section-center">
+      <div>
+        <h1 class="section-title">About Me</h1>
+        <div class="about-container">
+          <img class="animate__animated" src="profile.JPG" alt="About me" />
+          <div class="about-info animate__animated">
+            <h4>
+              Hi there, I am Chanvisal. I am Programmer, Freelancer, and I would
+              like to share with you some of my ideas.
+            </h4>
+            <div class="information">
+              <div class="title-information">
+                <p>Name</p>
+                <p>Date of birth</p>
+                <p>Address</p>
+                <p>Email</p>
+                <p>Phone</p>
+              </div>
+              <div class="data-of-information">
+                <span>: Chanvisal Nob</span>
+                <span>: May 15, 2004</span>
+                <span>: Kampot province, Cambodia</span>
+                <span>: chanvisal.nob09@gmail.com</span>
+                <span>: +855 965 920 585</span>
+              </div>
+            </div>
+            <button class="tranform-button download-cv-button">
+              Download CV
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="resume-section" class="section-center">
+      <div>
+        <h1 class="section-title">Resume</h1>
+        <div class="resume-container">
+          <div class="resume-tab">
+            <button class="tap-button active education-tap" data-id="education">
+              Education
+            </button>
+            <button class="tap-button education-tap" data-id="experience">
+              Work Experience
+            </button>
+            <button class="tap-button education-tap" data-id="skill">
+              Skill
+            </button>
+          </div>
+
+          <div class="resume-center">
+            <!-- Education Tab -->
+            <div class="content active" id="education">
+              <div class="resume-card">
+                <div class="card-title">
+                  <h4>Computer Science at Royal University of Phnom Penh</h4>
+                </div>
+                <p class="study-year">Present</p>
+                <p class="study-info">
+                  It's a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+              </div>
+
+              <div class="resume-card">
+                <div class="card-title">
+                  <h4>PhotoShop at CITO Computer Center</h4>
+                </div>
+                <p class="study-year">December, 2023</p>
+                <p class="study-info">
+                  It's a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+              </div>
+
+              <div class="resume-card">
+                <div class="card-title">
+                  <h4>C/C++ Programming at Ant Training Center</h4>
+                </div>
+                <p class="study-year">August, 2022</p>
+                <p class="study-info">
+                  It's a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+              </div>
+
+              <div class="resume-card">
+                <div class="card-title">
+                  <h4>Front End at CITO Computer Center</h4>
+                </div>
+                <p class="study-year">March, 2024</p>
+                <p class="study-info">
+                  It's a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+              </div>
+            </div>
+
+            <!-- Experience Tab -->
+            <div class="content" id="experience">
+              <div class="resume-card">
+                <div class="card-title">
+                  <h4>Computer Teacher at CITO Computer Center</h4>
+                </div>
+                <p class="study-year">Present</p>
+                <ul class="study-info">
+                  <li>
+                    Introduced students to effective computer skills including
+                    typing.
+                  </li>
+                  <li>
+                    Showed students how computers, tablets, and phones can help
+                    learning.
+                  </li>
+                  <li>
+                    Trained and developed students' skill in C++, C, HTML, CSS,
+                    JavaScript, Photoshop, MS Office.
+                  </li>
+                  <li>
+                    Quickly learned new skills and applied them to daily tasks,
+                    improving efficiency and productivity.
+                  </li>
+                  <li>
+                    Processed software and hardware by coordinating user setups,
+                    installations, and upgrades.
+                  </li>
+                  <li>
+                    Set up computers and networking systems, providing
+                    step-by-step instructions on basic use.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="resume-card">
+                <div class="card-title">
+                  <h4>Stock Controller at Zando Cambodia</h4>
+                </div>
+                <p class="study-year">November, 2022 - July, 2023</p>
+                <ul class="study-info">
+                  <li>Provided customer service and worked in teams.</li>
+                  <li>
+                    Counted items that were transferred from warehouses and
+                    other locations.
+                  </li>
+                  <li>
+                    Was responsible for working with systems to receive and
+                    transfer items.
+                  </li>
+                  <li>
+                    Ensured all items for sale had price labels and tracking
+                    chips.
+                  </li>
+                  <li>
+                    Investigated discrepancies in stock counts and resolved
+                    issues.
+                  </li>
+                  <li>
+                    Occasionally fixed label printers when errors occurred.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Skills Tab -->
+            <div class="content" id="skill">
+              <div class="progress-container">
+                <div class="heading">Technical Skills</div>
+                <div class="technical-bar">
+                  <div class="bar">
+                    <i class="fa-brands fa-html5" style="color: #e34c26"></i>
+                    <div class="info">
+                      <span>HTML</span>
+                    </div>
+                    <div class="progress-line html">
+                      <span></span>
+                    </div>
+                  </div>
+
+                  <div class="bar">
+                    <i class="fa-brands fa-css3-alt" style="color: #264de4"></i>
+                    <div class="info">
+                      <span>CSS</span>
+                    </div>
+                    <div class="progress-line css">
+                      <span></span>
+                    </div>
+                  </div>
+
+                  <div class="bar">
+                    <i class="fa-brands fa-js" style="color: #f0db4f"></i>
+                    <div class="info">
+                      <span>JavaScript</span>
+                    </div>
+                    <div class="progress-line js">
+                      <span></span>
+                    </div>
+                  </div>
+
+                  <div class="bar">
+                    <i class="fa-brands fa-react" style="color: #61dbfb"></i>
+                    <div class="info">
+                      <span>React</span>
+                    </div>
+                    <div class="progress-line react">
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="circular-container">
+                <div class="heading">Professional Skills</div>
+                <div class="radial-bars">
+                  <div class="radial-bar">
+                    <svg x="0px" viewBox="0 0 200 200">
+                      <circle
+                        class="progress-bar"
+                        cx="100"
+                        cy="100"
+                        r="80"
+                      ></circle>
+                      <circle
+                        class="path path-1"
+                        cx="100"
+                        cy="100"
+                        r="80"
+                      ></circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="text">Creativity</div>
+                  </div>
+
+                  <div class="radial-bar">
+                    <svg x="0px" viewBox="0 0 200 200">
+                      <circle
+                        class="progress-bar"
+                        cx="100"
+                        cy="100"
+                        r="80"
+                      ></circle>
+                      <circle
+                        class="path path-2"
+                        cx="100"
+                        cy="100"
+                        r="80"
+                      ></circle>
+                    </svg>
+                    <div class="percentage">65%</div>
+                    <div class="text">Communication</div>
+                  </div>
+
+                  <div class="radial-bar">
+                    <svg x="0px" viewBox="0 0 200 200">
+                      <circle
+                        class="progress-bar"
+                        cx="100"
+                        cy="100"
+                        r="80"
+                      ></circle>
+                      <circle
+                        class="path path-3"
+                        cx="100"
+                        cy="100"
+                        r="80"
+                      ></circle>
+                    </svg>
+                    <div class="percentage">75%</div>
+                    <div class="text">Problem-Solving</div>
+                  </div>
+
+                  <div class="radial-bar">
+                    <svg x="0px" viewBox="0 0 200 200">
+                      <circle
+                        class="progress-bar"
+                        cx="100"
+                        cy="100"
+                        r="80"
+                      ></circle>
+                      <circle
+                        class="path path-4"
+                        cx="100"
+                        cy="100"
+                        r="80"
+                      ></circle>
+                    </svg>
+                    <div class="percentage">85%</div>
+                    <div class="text">Teamwork</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of resume-center -->
+        </div>
+        <!-- End of resume-container -->
+      </div>
+    </section>
+    <section id="services-section" class="section-center">
+      <div class="main-section">
+        <h1 class="section-title">Services</h1>
+        <div class="services-container">
+          <div class="service-card 
+          animate__animated">
+            <div class="service-logo">
+              <img src="image/website.gif" alt="" />
+            </div>
+            <div class="service-name">Web Developer</div>
+            <p class="service-info">
+              You can contact me for create website for your besinese and that
+              website create by HTML CSS JS and more framwork with backend and
+              database also.
+            </p>
+          </div>
+
+          <div class="service-card
+          animate__animated animate__delay-1s">
+            <div class="service-logo">
+              <img src="image/graphic-designer.gif" alt="" />
+            </div>
+            <div class="service-name">Graphic Design</div>
+            <p class="service-info">
+              My graphic design services cover a wide range of products –
+              brochures, business cards, Logos and branded elements,
+              Posters, banners and signage Social media graphics & digital marketing ads – I’ve pretty much designed it all.
+            </p>
+          </div>
+
+          <div class="service-card
+          animate__animated animate__delay-2s">
+            <div class="service-logo">
+              <img src="image/computer.png" alt="" />
+            </div>
+            <div class="service-name">Destop Application</div>
+            <p class="service-info">
+              You can contact me for create website for your besinese and that
+              website create by HTML CSS JS and more framwork with backend and
+              database also.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact-section" class="section-center">
+      <h1 class="section-title">Contact</h1>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+<

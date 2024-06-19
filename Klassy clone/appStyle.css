@@ -19,6 +19,7 @@ header{
     left: 0;
     background-color: transparent;
     transition: background-color 0.4s ease-in-out;
+    z-index: 4;
 }
 .header-container{
     width: 100vw;
@@ -82,7 +83,7 @@ header:hover .img-for-change{
     background-size: cover;
     background-position: center; 
     width: 100vw;
-    height: 690px;
+    height: 93vh;
     display: flex;
     align-items: end;
     position: relative;
@@ -142,7 +143,7 @@ header:hover .img-for-change{
   }
   #dropdowIcon{
     color: black;
-    font-size: 50px;
+    font-size: 45px;
     background-color: white;
     position: absolute;
     left: 46.5%;
@@ -215,8 +216,10 @@ header:hover .img-for-change{
   column-gap: 45px;
 }
 .product-cart {
-  width: 100%;
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .product-image {
   width: 100%;
@@ -224,7 +227,7 @@ header:hover .img-for-change{
 .product-image .item-image {
   width: 100%;
   max-height: 300px;
-  object-fit: contain;
+  object-fit: cover;
   cursor: pointer;
   transition: 0.5s ease;
 }
@@ -596,7 +599,7 @@ footer{
   margin: 15px 0;
 }
 .medai-icon i{
- 
+  cursor: pointer;
   font-size: 18px;
   padding-right: 20px;
 }
