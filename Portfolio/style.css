@@ -26,8 +26,8 @@ header {
   padding: 30px;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #3572ef;
   z-index: 1000;
+  background-color: white;
   box-shadow: rgba(108, 175, 231, 0.5) 0px 4px 12px;
 }
 .navbar ul {
@@ -46,12 +46,13 @@ header {
   display: block;
   color: black;
   transition: 0.2s;
-  margin: 0 5px;
-  border-radius: 10px;
-  padding: 10px 25px;
+  margin: 0 25px;
+  /* border-radius: 10px; */
+  padding: 10px 0px;
 }
 .navbar ul li a:hover {
-  background-color: #f2f3f4;
+  color: #3572ef;
+  border-bottom: 1px solid #3572ef;
 }
 header i {
   color: white;
@@ -68,7 +69,7 @@ header i {
 .section-center {
   width: 100vw;
   height: auto;
-  padding: 70px 0;
+  padding: 70px 20px;
   display: grid;
   align-items: start;
   justify-items: center;
@@ -572,6 +573,49 @@ header i {
 .service-info {
   color: #616161;
   font-size: 15px;
+}
+/* contact */
+.contact-container{
+  width: 100%;
+  max-width: 900px;
+  margin: 0 20px;
+  padding: 50px;
+  display: grid;
+  border-radius: 20px;
+  grid-template-columns: repeat(2,1fr);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.media-contain{
+  padding: 25px 0;
+}
+.left-contain h2{
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.media-contain i{
+  padding: 15px;
+  font-size: 25px;
+  background-color: #dedede;
+  border-radius: 50%;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.media-contain i:hover{
+  color: #3572ef;
+  transform: scale(1.1);
+}
+label,input{
+  display: block;
+}
+label{
+  padding-bottom: 5px;
+}
+input{
+  width: 100%;
+  padding: 8px 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
 }
 @media only screen and (max-width: 750px) {
   .navbar {
