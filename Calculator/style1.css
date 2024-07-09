@@ -1,0 +1,72 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: black;
+    width: 300px;
+    height: 550px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+input{
+    height: 50px;
+    width: 260px;
+    color: white;
+    border: none;
+    font-size: 50px;
+    background-color: transparent;
+}
+.key{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.spanKey{
+    width: 120px;
+    height: 60px;
+    border-radius: 50px;
+    flex: 1;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.row-top button{
+    background-color: rgb(197, 197, 197);
+}
+.row-top button:hover{
+    background-color: white;
+}
+.row button{
+    background-color: rgb(91, 91, 91);
+    color: white;   
+}
+.row button:hover{
+    background-color: rgb(191, 191, 191);
+}
+#symbol{
+    color:white;
+    background-color: orange;
+}
+#symbol:focus{
+    background-color: white;
+    color: orange;   
+}
