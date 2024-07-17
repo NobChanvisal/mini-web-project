@@ -17,20 +17,20 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
-.alphaImage{
-    background-image: url(image/Alpha.jpg);
+.ronaldoImage{
+    background-image: url(image/cr7.png);
 }
-.khufraImage{
-    background-image: url(image/khufra.jpg);
+.mbppeImage{
+    background-image: url(image/mbppe.png);
 }
-.fredrinnImage{
-    background-image: url(image/fredrinn.jpg);
+.viciusImage{
+    background-image: url(image/Vinicius\ Jr.png);
 }
-.lyliaImage{
-    background-image: url(image/lylia.jpg);
+.bellingImage{
+    background-image: url(image/Bellingham.png);
 }
-.grangerImage{
-    background-image: url(image/granger.jpg);
+.gulerImage{
+    background-image: url(image/guler.png);
 }
 @media (max-width:480px){
     .slide:nth-of-type(4),:nth-of-type(5){
@@ -55,7 +55,7 @@ h3{
     overflow: hidden;
 }
 .slide.active{
-    flex: 10;
+    flex: 3;
 }
 .slide.active h3{
     opacity: 1;
