@@ -12,6 +12,7 @@ section{
 body{
   background-color: rgb(232, 232, 232);
 }
+
 header{
     width: 100vw;
     position: fixed;
@@ -19,7 +20,7 @@ header{
     left: 0;
     background-color: transparent;
     transition: background-color 0.4s ease-in-out;
-    z-index: 4;
+    z-index: 1000;
 }
 .header-container{
     width: 100vw;
@@ -70,6 +71,7 @@ header:hover .img-for-change{
 }
 .left-section a{
     margin: 5px 20px;
+    padding-bottom: 20px;
     color: white;
     font-size: 14px;
     font-weight: 600;
@@ -78,6 +80,11 @@ header:hover .img-for-change{
     text-transform: uppercase;
     transition: color 0.4s ease-in-out;
 }
+.left-section a:hover
+{
+  border-bottom: 2px solid black;
+}
+
 #home-section{
     background: url("https://klassywatches.com/cdn/shop/files/BLADE_DRAGON_1800x.png?v=1716016742");
     background-size: cover;
@@ -103,6 +110,7 @@ header:hover .img-for-change{
     padding: 14px 28px;
     margin-top: 25px;
     letter-spacing: 2px;
+    text-decoration: none;
     text-transform: uppercase;
     color: white;
     background-color: transparent;
