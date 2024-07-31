@@ -1,0 +1,66 @@
+[
+    {
+        "id":1,
+        "img": "https://klassywatches.com/cdn/shop/files/BladeDragon_700x.png?v=1707151958",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/Q-36_300x.png?v=1707151958",
+        "name":"ZINVO BLADE DRAGON",
+        "price": 43000,
+        "category": "new-arrival"
+    },
+    {
+        "id":2,
+        "img" : "https://klassywatches.com/cdn/shop/files/s354copy_400x.png?v=1700631492",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/L-27-OKcopy_300x.png?v=1700631492",
+        "name": "ZINVO BLADE WOMEN WHITE MAGIC",
+        "price": 39000,
+        "category": "new-arrival"
+    },
+    {
+        "id":3,
+        "img": "https://klassywatches.com/cdn/shop/files/BladeTrifecta_400x.png?v=1707148122",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/L-28-OKcopy2_300x.png?v=1707148122",
+        "name": "ZINVO BLADE WOMEN TRIFECTA",
+        "price": 39000,
+        "category": "new-arrival"
+    },
+    {
+        "id":4,
+        "img": "https://klassywatches.com/cdn/shop/files/5x_400x.png?v=1700153579",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/6x_300x.png?v=1700153579",
+        "name": "ZINVO BLADE TRIFECTA",
+        "price":41000,
+        "category": "new-arrival"
+    },
+    {
+        "id":5,
+        "img" : "https://klassywatches.com/cdn/shop/files/1_3_800x.png?v=1694110929",
+        "imgRotate": "https://klassywatches.com/cdn/shop/products/3_300x.png?v=1694110929",
+        "name": "Zinvo Blade Alpha",
+        "price": 41000,
+        "category": "best-seller"
+    },
+    {
+        "id":6,
+        "img": "https://klassywatches.com/cdn/shop/files/s160xcopy3_800x.png?v=1694111107",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/s163x_3_1_300x.png?v=1694111107",
+        "name":"ZINVO BLADE COBALT GEM",
+        "price": 41000,
+        "category": "best-seller"
+    },
+    {
+        "id":7,
+        "img": "https://klassywatches.com/cdn/shop/files/s58x1_800x.png?v=1694111082",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/Q-3put_3_300x.png?v=1694111082",
+        "name": "ZINVO BLADE BLACK MAGIC GEM",
+        "price": 41000,
+        "category": "best-seller"
+    },
+    {
+        "id":8,
+        "img": "https://klassywatches.com/cdn/shop/products/s1_800x.png?v=1612929669",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/s3_300x.png?v=1612929669",
+        "name": "ZINVO BLADE FURY GEM",
+        "price": 41000,
+        "category": "best-seller"
+    }
+]

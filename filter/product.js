@@ -34,7 +34,6 @@ fetch(jsonFile)
     filterBtns.forEach((btn) => {
       btn.addEventListener("click", (e) => {
         const category = e.currentTarget.dataset.id; // Get the filter category
-
         if (category === "all") {// If "all" is clicked, display all products
           displayProducts(data);
         } else {

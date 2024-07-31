@@ -5,10 +5,6 @@
     box-sizing: border-box;
     font-family: "Barlow", sans-serif;
 }
-section{
-  height: 100hv;
-  width: 100w;
-}
 body{
   background-color: rgb(232, 232, 232);
 }
@@ -16,6 +12,7 @@ body{
 header{
     width: 100vw;
     position: fixed;
+    font-weight: 500;
     top: 0;
     left: 0;
     background-color: transparent;
@@ -167,9 +164,9 @@ header:hover .img-for-change{
 
 #product-section {
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   margin-top: 30px;
-  padding: 100px 0;
+  padding: 80px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -181,6 +178,7 @@ header:hover .img-for-change{
   width: 100%;
   text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -188,16 +186,17 @@ header:hover .img-for-change{
   flex-direction: column;
   margin-bottom: 70px;
 }
-.product-header h3 {
+.product-container h3 {
   color: #1c1b1b;
   font-size: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
+  font-weight:500;
 }
 .product-btn-header button {
   font-size: 20px;
   background-color: transparent;
   border: none;
-  color: black;
+  color: #1c1b1b;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
@@ -208,7 +207,7 @@ header:hover .img-for-change{
 .new-arrival-button {
   margin-left: 45px;
 }
-.js-button-header.active {
+.js-tap-button.active {
   pointer-events: none;
   border-bottom: 1px solid black;
 }
@@ -224,24 +223,34 @@ header:hover .img-for-change{
   column-gap: 45px;
 }
 .product-cart {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* overflow: hidden; */
+  position: relative;
 }
-.product-image {
-  width: 100%;
+.product-cart div{
+  display: block;
 }
-.product-image .item-image {
+.main-image img{
   width: 100%;
-  max-height: 300px;
   object-fit: cover;
   cursor: pointer;
-  transition: 0.5s ease;
 }
-.item-image:hover {
-  scale: 1.1;
-  rotate: 8deg;
+.main-image .product-rotate-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.2s ease;
+}
+.main-image:hover .product-rotate-image{
+  opacity: 1;
+}
+.main-image:hover .product-image{
+  opacity: 0;
 }
 .product-info {
   margin-top: 20px;
@@ -329,11 +338,12 @@ header:hover .img-for-change{
   align-items: end;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   transition: background-size 2s ease-in-out; 
   cursor: pointer;
 }
 .model-card:hover{
-  background-size: 120%;
+  background-size: 150%;
 }
 .model-card-info{
   padding: 50px;
@@ -413,13 +423,6 @@ header:hover .img-for-change{
 .slider-container{
   flex-direction: column;
 }
-.product-info,
-.right-contain {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 .wrapper {
   max-width: 1100px;
   width: 100%;
@@ -428,6 +431,7 @@ header:hover .img-for-change{
   padding: 0 130px;
 }
 .card {
+  width: 100%;
   scroll-snap-align: start;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -441,29 +445,10 @@ header:hover .img-for-change{
 .right-contain {
   margin: 0 80px;
 }
-.main-image {
-  height: 250px;
-}
-.product-image,
-.product-rotate-image {
+.right-contain .main-image {
   width: 250px;
 }
-.product-info {
-  margin-top: 20px;
-}
-.product-info .product-name {
-  font-size: 12px;
-  font-weight: 500;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: black;
-  margin-bottom: 5px;
-}
-.product-info span {
-  font-size: 12px;
-  color: #6a6a6a;
-}
+
 .view-product-button {
   padding: 14px 28px;
   margin-top: 25px;
@@ -655,8 +640,12 @@ footer{
     padding: 0 25px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 45px;
+    gap: 20px;
   }
+  /* .product-header {
+    flex-direction: column;
+    margin-bottom: 10px;
+  } */
   .model-card{
     height: 500px;
   }

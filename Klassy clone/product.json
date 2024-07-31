@@ -1,22 +1,82 @@
 [
     {
+        "id":1,
+        "img": "https://klassywatches.com/cdn/shop/files/BladeDragon_700x.png?v=1707151958", 
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/Q-36_300x.png?v=1707151958",
+        "name":"ZINVO BLADE DRAGON",
+        "price": 43000,
+        "category": "zinvo"
+    },
+    {
+        "id":2,
+        "img" : "https://klassywatches.com/cdn/shop/files/After3_1_1_1_700x.png?v=1707148083",
+        
+        "name": "ZINVO BLADE WOMEN WHITE MAGIC",
+        "price": 39000,
+        "category": "zinvo"
+    },
+    {
+        "id":3,
+        "img": "https://klassywatches.com/cdn/shop/files/s354copy_700x.png?v=1700631492",
+        
+        "name": "ZINVO BLADE WOMEN TRIFECTA",
+        "price": 39000,
+        "category": "zinvo"
+    },
+    {
+        "id":4,
+        "img": "https://klassywatches.com/cdn/shop/files/BladeTrifecta_700x.png?v=1707148122",  
+        "name": "ZINVO BLADE TRIFECTA",
+        "price":41000,
+        "category": "zinvo"
+    },
+    {
+        "id":5,
         "img" : "https://klassywatches.com/cdn/shop/files/1_3_800x.png?v=1694110929",
         "name": "Zinvo Blade Alpha",
-        "price": 41000
+        "category": "zinvo"
     },
     {
+        "id":6,
         "img": "https://klassywatches.com/cdn/shop/files/s160xcopy3_800x.png?v=1694111107",
         "name":"ZINVO BLADE COBALT GEM",
-        "price": "41000"
+        
+        "price": 41000,
+        "category": "zinvo"
     },
     {
+        "id":7,
         "img": "https://klassywatches.com/cdn/shop/files/s58x1_800x.png?v=1694111082",
         "name": "ZINVO BLADE BLACK MAGIC GEM",
-        "price": "41000"
+        "price": 41000,
+        "category": "zinvo"
     },
     {
+        "id":8,
         "img": "https://klassywatches.com/cdn/shop/products/s1_800x.png?v=1612929669",
         "name": "ZINVO BLADE FURY GEM",
-        "price":"41000"
+        "price": 41000,
+        "category": "zinvo"
+    },
+    {
+        "id":9,
+        "img": "https://klassywatches.com/cdn/shop/files/UTBL34_1_400x.png?v=1707710007",
+        "name": "D1 MILANO UTBL34 ULTRA THIN BRACELET 30 MM - EDGE",
+        "price": 39500,
+        "category": "d1milano"
+    },
+    {
+        "id":10,
+        "img": "https://klassywatches.com/cdn/shop/files/UTBL33_600x.png?v=1707709797",
+        "name": "D1 MILANO UTBL34 ULTRA THIN BRACELET 30 MM - EDGE",
+        "price": 39500,
+        "category": "d1milano"
+    },
+    {
+        "id":11,
+        "img": "https://klassywatches.com/cdn/shop/files/UTBL32_200x.png?v=1707709603",
+        "name": "D1 MILANO UTBL34 ULTRA THIN BRACELET 30 MM - EDGE",
+        "price": 39500,
+        "category": "d1milano"
     }
 ]

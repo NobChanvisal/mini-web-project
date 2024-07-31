@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="productStyle.css">
+    
   </head>
   <body>
     <header style="background-color: white;">
@@ -36,8 +37,23 @@
         </div>
       </div>
     </header>
-    <section >
-
+    <section class="all-watch-section">
+      <h2 class="heading">ALL WATCHES</h2>
+      <div class="all-watch-container">
+        <div class="side-bar">
+          <h2>BRAND</h2>
+          <p class="filter-button" data-id="zinvo">Zinvo</p>
+          <p class="filter-button" data-id="d1milano">D1 Milano</p>
+          <p class="filter-button" data-id="corniche">Corniche</p>
+          <p class="filter-button" data-id="david-paper">David Daper</p>
+          <p class="filter-button" data-id="electrician">Electricianz</p>
+          <p class="filter-button" data-id="meister">Meister</p>
+        </div>
+        <div class="product-container">
+          <div class="product-item-grid js-item-grid" id="best-seller"></div>
+        </div>
+      </div>
     </section>
+    <script src="javascript/product.js"></script>
   </body>
 </html>
