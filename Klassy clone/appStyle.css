@@ -21,24 +21,33 @@ header{
 }
 .header-container{
     width: 100vw;
-    position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
-    padding: 5px 30px;
+    padding-top: 14px;
+    padding: 18px 50px 25px;
 }
 .section-container{
     flex: 1;
 }
+.row-1{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
 .image-group img{
     max-width: 100px;
+    cursor: pointer;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    cursor: pointer;
 }
 .img-for-change{
     opacity: 0;
@@ -60,6 +69,12 @@ header.scrolled  .img-for-change,
 header:hover .img-for-change{
     opacity: 1;
 }
+header .bx-menu{
+  display: none;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
 .group-icon i{
     font-size: 25px;
     margin-left: 25px;
@@ -71,7 +86,7 @@ header:hover .img-for-change{
     padding-bottom: 20px;
     color: white;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 2px;
     text-decoration: none;
     text-transform: uppercase;
@@ -86,7 +101,7 @@ header:hover .img-for-change{
     background: url("https://klassywatches.com/cdn/shop/files/BLADE_DRAGON_1800x.png?v=1716016742");
     background-size: cover;
     background-position: center; 
-    width: 100vw;
+    width: 100%;
     height: 93vh;
     display: flex;
     align-items: end;
@@ -163,7 +178,7 @@ header:hover .img-for-change{
 
 
 #product-section {
-  width: 100vw;
+  width: 100%;
   /* height: 100vh; */
   margin-top: 30px;
   padding: 80px 0;
@@ -211,12 +226,16 @@ header:hover .img-for-change{
   pointer-events: none;
   border-bottom: 1px solid black;
 }
+.product-container{
+  display: grid;
+  place-items: center;
+}
 .product-item-grid {
   animation: transitionIn 3s;
   display: none;
 }
 .product-item-grid.active {
-  width: 100vw;
+  width: 100%;
   padding: 0 25px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -227,8 +246,7 @@ header:hover .img-for-change{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  /* overflow: hidden; */
+  
   position: relative;
 }
 .product-cart div{
@@ -330,6 +348,7 @@ header:hover .img-for-change{
   grid-template-columns: repeat(3,1fr);
   gap: 25px;
   margin: 15px 30px;
+  align-items: center;
 }
 .model-card{
   width: 100%;
@@ -365,10 +384,11 @@ header:hover .img-for-change{
 }
 .future-container{
   width: 100%;
-  padding: 80px 0;
+  padding: 80px;
   flex-direction: column;
 }
 .future-product{
+  width: 100%;
   margin: 0 98px;
   flex-direction: row;
 }
@@ -378,7 +398,8 @@ header:hover .img-for-change{
   font-weight: 500;
   padding-bottom: 70px;
 }
-.future-product-info{
+.infor-detail{
+  width: 100%;
   margin-left: 80px;
   text-align: start;
   align-items: start;
@@ -387,22 +408,31 @@ header:hover .img-for-change{
   letter-spacing: 2px;
 }
 .future-product img{
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
 }
 .future-brand{
   margin-bottom: 20px;
   font-size: 12px;
 }
-.furure-name{
+.infor-detail .future-names{
   font-size: 18px;
+  margin-bottom: 15px;
 }
-.future-product-info span{
-  margin-top: 15px;
+.infor-detail button{
+  max-width: 400px;
+}
+.infor-detail .tranform-button{
+  width: 100%;
+  margin-bottom: 25px;
+}
+.infor-detail span{
+  
   font-size: 16px;
   color: #6a6a6a;
 }
 .buy-it-button,.subscribe-button{
-  width: 400px;
+  width: 100%;
   padding: 14px 28px;
   border: none;
   background-color: black;
@@ -422,13 +452,13 @@ header:hover .img-for-change{
 /*  */
 .slider-container{
   flex-direction: column;
+  overflow: hidden;
+  max-height: 950px;
 }
 .wrapper {
-  max-width: 1100px;
   width: 100%;
   position: relative;
-  /* background-color: lightblue; */
-  padding: 0 130px;
+  padding: 0 100px;
 }
 .card {
   width: 100%;
@@ -437,17 +467,31 @@ header:hover .img-for-change{
   grid-template-columns: repeat(2, 1fr);
   /* background-color: lightcoral; */
 }
-.left-contain img {
+.left-contain,.right-contain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .left-contain img {
   width: 100%;
   height: 100%;
+  max-width: 550px;
+  max-height: 550px;
   object-fit: cover;
 }
 .right-contain {
   margin: 0 80px;
 }
-.right-contain .main-image {
-  width: 250px;
+.right-contain .main-image{
+  position: relative;
 }
+.right-contain .main-image img{
+  max-width: 250px;
+}
+/* .right-contain .main-image,
+.right-contain .main-image .product-rotate-image {
+  width: 250px;
+} */ 
 
 .view-product-button {
   padding: 14px 28px;
@@ -535,21 +579,24 @@ button:focus {
   align-items: center;
 }
 /*  */
-#location-section{
-  padding: 80px;
+#location-sections{
+  padding: 80px 20px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 .location-container{
-  max-width: 1100px;
-  display: flex;
-  flex-direction: row;
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: 1fr 320px;
   background-color: white;
 }
 .location-container img{
-  max-width: 730px;
+  width: 100%;
+  height: 100%;
+  max-width: 780px;
+  max-height: 550px;
+  object-fit: cover;
 }
 .location-info{
   padding: 50px 60px;
@@ -565,16 +612,15 @@ button:focus {
 }
 /* footter-section */
 footer{
-  padding: 80px;
   background-color: white;
   color: #6a6a6a;
   font-size: 14px;
+  padding: 80px;
 }
 .footer-container{
   display: flex;
   flex-wrap: wrap;
   justify-content:space-between;
-  
 }
 .footer-title{
   text-transform: uppercase;
@@ -596,6 +642,9 @@ footer{
   font-size: 18px;
   padding-right: 20px;
 }
+.medai-icon i:hover{
+  color: black;
+}
 .footer-menu{
   list-style: none;
   text-decoration: none;
@@ -616,11 +665,80 @@ footer{
 .newsletter-info{
   margin-bottom: 20px;
 }
-@media (max-width:1007px){
+@media (max-width:480px){
+  .group-icon i{
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .group-icon .bx-shopping-bag{
+    font-size: 22px;
+  }
+  .header-container .bx-menu{
+    font-size: 22px;
+  }
+  .header-container{
+    padding: 15px 18px;
+  }
+  .header-container .image-group img{
+    width: 80px;
+    height: 24px;
+  }
+  #home-section{
+    background: url("	https://klassywatches.com/cdn/shop/files/Artboard_1_6_x800.png?v=1716018940");
+    background-size: cover;
+    background-position: center; 
+  }
+  .home-info{
+    padding: 50px 24px;
+  }
+  .left-section{
+    display: none;
+  }
+  #product-section{
+    padding:50px 0;
+  }
+  .product-name{
+    font-size: 11px;
+  }
+  .product-btn-header button{
+    font-size: 15px;
+  }
+  .product-model-grid{
+    gap: 10px;
+  }
+  .product-model-grid .model-card{
+    height: 280px;
+  }
+  .model-card-info button{
+    font-size: 10px;
+    padding: 12px 18px;
+  }
+  .model-card-info .model-name{
+    font-size: 15px;
+  }
+  .future-container{
+    padding: 20px;
+  }
+  .infor-detail{
+    margin: 0;
+  }
+  .location-container,
+  .location-info{
+    font-size: 14px;
+  }
+  footer{
+    padding: 20px;
+  }
+  .about-us,.footer-menu ,.newsletter{
+    padding: 30px 0;
+  }
+}
+@media (max-width:750px){
   .right-contain{
     opacity: 0;
     overflow: hidden;
   }
+  /* wrapper */
   .left-contain img{
     max-height: 550px;
   }
@@ -629,30 +747,78 @@ footer{
     position: absolute;
   }
   .card{
+    padding: 15px;
+  }
+  /* model car */
+  .product-model-grid{
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .model-card:last-child{
+    grid-column: 1 / -1;
   }
 }
-
-@media (max-width: 1010px) {
+@media (max-width:1007px){
+  /* header */
+  .left-section{
+    display: none;
+  }
+  .row-1{
+    margin: 0;
+  }
+  .header-container .bx-menu{
+    display: block;
+  }
+  .group-icon .bx-user{
+    display: none;
+  }
+  .future-product{
+    display: flex;
+    flex-direction: column;
+  }
+  .infor-detail{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .product-item-grid.active {
-    width: 100vw;
+    width: 100%;
     padding: 0 25px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-  /* .product-header {
+  .wrapper{
+    padding: 0;
+  }
+  .wrapper i{
+    display: none;
+  }
+  .card{
+    display: block;
+  }
+  .right-contain .main-image img{
+    max-width: 150px;
+  }
+  
+  .location-container{
+    display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
-  } */
+  }
+  #location-sections{
+    padding: 20px;
+  }
   .model-card{
-    height: 500px;
+    height: 350px;
   }
-  .product-model-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    margin: 15px 30px;
+  .model-card-info{
+    padding: 10px;
   }
+  
 }
+@media (max-width:1400px){
+  
+}
+
 

@@ -1,6 +1,6 @@
 [
     {
-        "id":1,
+        "id":"z1",
         "img": "https://klassywatches.com/cdn/shop/files/BladeDragon_700x.png?v=1707151958", 
         "imgRotate":"https://klassywatches.com/cdn/shop/files/Q-36_300x.png?v=1707151958",
         "name":"ZINVO BLADE DRAGON",
@@ -8,75 +8,220 @@
         "category": "zinvo"
     },
     {
-        "id":2,
-        "img" : "https://klassywatches.com/cdn/shop/files/After3_1_1_1_700x.png?v=1707148083",
-        
-        "name": "ZINVO BLADE WOMEN WHITE MAGIC",
-        "price": 39000,
-        "category": "zinvo"
-    },
-    {
-        "id":3,
-        "img": "https://klassywatches.com/cdn/shop/files/s354copy_700x.png?v=1700631492",
-        
+        "id":"z2",
+        "img" : "https://klassywatches.com/cdn/shop/files/s354copy_600x.png?v=1700631492",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/L-27-OKcopy_300x.png?v=1700631492",
         "name": "ZINVO BLADE WOMEN TRIFECTA",
         "price": 39000,
         "category": "zinvo"
     },
     {
-        "id":4,
-        "img": "https://klassywatches.com/cdn/shop/files/BladeTrifecta_700x.png?v=1707148122",  
+        "id":"z3",
+        "img": "https://klassywatches.com/cdn/shop/files/BladeTrifecta_400x.png?v=1707148122",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/L-28-OKcopy2_300x.png?v=1707148122",
         "name": "ZINVO BLADE TRIFECTA",
-        "price":41000,
-        "category": "zinvo"
-    },
-    {
-        "id":5,
-        "img" : "https://klassywatches.com/cdn/shop/files/1_3_800x.png?v=1694110929",
-        "name": "Zinvo Blade Alpha",
-        "category": "zinvo"
-    },
-    {
-        "id":6,
-        "img": "https://klassywatches.com/cdn/shop/files/s160xcopy3_800x.png?v=1694111107",
-        "name":"ZINVO BLADE COBALT GEM",
-        
         "price": 41000,
         "category": "zinvo"
     },
     {
-        "id":7,
-        "img": "https://klassywatches.com/cdn/shop/files/s58x1_800x.png?v=1694111082",
-        "name": "ZINVO BLADE BLACK MAGIC GEM",
+        "id":"z4",
+        "img": "https://klassywatches.com/cdn/shop/files/5x_400x.png?v=1700153579",  
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/6x_300x.png?v=1700153579",
+        "name": "Zinvo Rival 12",
+        "price":35000,
+        "category": "zinvo"
+    },
+    {
+        "id":"z5",
+        "img" : "https://klassywatches.com/cdn/shop/files/s3081024_400x.png?v=1694017239",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/s3091024_300x.png?v=1694017239",
+        "price":27500,
+        "name": "Zinvo Rival Mirage",
+        "category": "zinvo"
+    },
+    {
+        "id":"z6",
+        "img": "https://klassywatches.com/cdn/shop/files/s58x1_400x.png?v=1694111082",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/Q-3put_3_400x.png?v=1694111082",
+        "name":"Zinvo Blade Black Magic Gem",
         "price": 41000,
         "category": "zinvo"
     },
     {
-        "id":8,
-        "img": "https://klassywatches.com/cdn/shop/products/s1_800x.png?v=1612929669",
-        "name": "ZINVO BLADE FURY GEM",
+        "id":"z7",
+        "img": "https://klassywatches.com/cdn/shop/files/1_After_4-2_400x.png?v=1694110973",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/2_After-2_300x.png?v=1694110973",
+        "name": "Zinvo Blade Volt Gem",
         "price": 41000,
         "category": "zinvo"
     },
     {
-        "id":9,
+        "id":"z8",
+        "img": "https://klassywatches.com/cdn/shop/files/s160xcopy3_400x.png?v=1694111107",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/s163x_3_1_300x.png?v=1694111107",
+        "name": "Zinvo Blade Cobalt Gem",
+        "price": 41000,
+        "category": "zinvo"
+    },
+    {
+        "id":"z9",
+        "img": "https://klassywatches.com/cdn/shop/files/Purple1_400x.png?v=1691511900",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/Purple_2_300x.png?v=1691511900",
+        "name": "Zinvo Blade Women Violet Gem",
+        "price": 39000,
+        "category": "zinvo"
+    },
+    {
+        "id":"z10",
+        "img": "https://klassywatches.com/cdn/shop/files/Green1_d668f0c9-b088-4685-8b0e-2aed5052337b_400x.png?v=1691511917",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/Green_2_300x.png?v=1691511917",
+        "name": "Zinvo Blade Women Emerald Gem",
+        "price": 39000,
+        "category": "zinvo"
+    },
+    {
+        "id":"z11",
+        "img": "https://klassywatches.com/cdn/shop/files/Addingnumbersaroundacircle_400x.png?v=1694110996",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/Addingnumbersaroundacircle2_1_400x.png?v=1694110996",
+        "name": "Zinvo Blade Cyan",
+        "price": 35000,
+        "category": "zinvo"
+    },
+    {
+        "id":"z12",
+        "img": "https://klassywatches.com/cdn/shop/files/Q-6put_1_copy_400x.png?v=1718294695",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/Q-12putcopy_300x.png?v=1718294695",
+        "name": "Zinvo Rival Silver Gem",
+        "price": 32500,
+        "category": "zinvo"
+    },
+    {
+        "id":"z13",
+        "img":"https://klassywatches.com/cdn/shop/products/Q-5put_1_copy_600x.png?v=1675884125",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/Q-11putcopy_300x.png?v=1675884126",
+        "name":"Zinvo Rival Fury Gem",
+        "price":33500,
+        "category":"zinvo"
+    },
+    {
+        "id":"z14",
+        "img":"https://klassywatches.com/cdn/shop/products/s10_400x.png?v=1640856729",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/2put_300x.png?v=1640856729",
+        "name":"Zinvo Chrono Marine",
+        "price":37000,
+        "category":"zinvo"
+    },
+    {
+        "id":"z15",
+        "img":"https://klassywatches.com/cdn/shop/products/s13_400x.png?v=1642736582",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/5put_e5abbecb-5f89-41a5-9806-d1794e267492_300x.png?v=1647247042",
+        "name":"Zinvo Chrono Venom",
+        "price":37000,
+        "category":"zinvo"
+    },
+    {
+        "id":"z16",
+        "img":"https://klassywatches.com/cdn/shop/products/s10_After_87120057-5f99-4b05-9cc2-df32d0da0364_400x.png?v=1659686766",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/s14_After_8450a95a-8a94-459e-98cd-0efc6f3840c1_300x.png?v=1659686766",
+        "name":"Zinvo Blade Ultraman Red",
+        "price":65000,
+        "category":"zinvo"
+    },
+    {
+        "id":"z17",
+        "img":"https://klassywatches.com/cdn/shop/products/s9_After_dafe8f48-77d6-460c-8d94-cc0c0a1899a2_400x.png?v=1659687096",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/s15_After_95b091ae-0149-4395-be89-1622f6561c17_300x.png?v=1659687097",
+        "name":"Zinvo Blade Ultraman Blue",
+        "price":65000,
+        "category":"zinvo"
+    },
+    {
+        "id":"z18",
+        "img":"https://klassywatches.com/cdn/shop/products/s8_After_e3b8ece7-4ebd-4846-b78f-df0a8dda02aa_400x.png?v=1659687109",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/s16_After_f3ccfa3e-51d4-467c-940f-440e3e6d15a8_300x.png?v=1659687109",
+        "name":"ZZinvo Blade Ultraman Black",
+        "price":65000,
+        "category":"zinvo"
+    },
+    {
+        "id":"d1",
         "img": "https://klassywatches.com/cdn/shop/files/UTBL34_1_400x.png?v=1707710007",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/UTBL34_Emotional_600x.png?v=1707710007",
         "name": "D1 MILANO UTBL34 ULTRA THIN BRACELET 30 MM - EDGE",
-        "price": 39500,
+        "price": 40300,
         "category": "d1milano"
     },
     {
-        "id":10,
+        "id":"d2",
         "img": "https://klassywatches.com/cdn/shop/files/UTBL33_600x.png?v=1707709797",
-        "name": "D1 MILANO UTBL34 ULTRA THIN BRACELET 30 MM - EDGE",
-        "price": 39500,
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/UTBL33_Emotional_600x.png?v=1707709800",
+        "name": "D1 MILANO UTBL33 ULTRA THIN BRACELET 30 MM - ASTRAL NIGHT",
+        "price": 40300,
         "category": "d1milano"
     },
     {
-        "id":11,
-        "img": "https://klassywatches.com/cdn/shop/files/UTBL32_200x.png?v=1707709603",
-        "name": "D1 MILANO UTBL34 ULTRA THIN BRACELET 30 MM - EDGE",
-        "price": 39500,
+        "id":"d3",
+        "img": "https://klassywatches.com/cdn/shop/files/UTBL32_400x.png?v=1707709603",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/UTBL32_Emotional_600x.png?v=1707709606",
+        "name": "D1 MILANO UTBL32 ULTRA THIN BRACELET 30 MM - ULTIMATE GREY",
+        "price": 40300,
+        "category": "d1milano"
+    },
+    {
+        "id":"d4",
+        "img":"https://klassywatches.com/cdn/shop/files/UTBL31_600x.png?v=1707709275",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/UTBL31_Emotional_800x.png?v=1707709307",
+        "name": "D1 MILANO UTBL31 ULTRA THIN BRACELET 30 MM - ZEPHYR GOLD",
+        "price": 40300,
+        "category": "d1milano"
+    },
+    {
+        "id":"d5",
+        "img":"https://klassywatches.com/cdn/shop/files/SKRJ16_1200x_16ab1928-6384-4729-a679-a1cdc4efc126_400x.webp?v=1707972635",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/SKRJ16_Emotional_1200x_1e1cfd87-ebef-4e92-b038-16e7cd16543d_600x.webp?v=1707972635",
+        "name": "D1 MILANO SKRJ16 SKELETON RUBBER STRAP - SLICE ORANGE",
+        "price": 74000,
+        "category": "d1milano"
+    },
+    {
+        "id":"d6",
+        "img":"https://klassywatches.com/cdn/shop/files/SKRJ15_1200x_0abdd803-e9cd-460d-80f5-3db86e54c33c_400x.webp?v=1707972466",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/SKRJ15_Emotional_1200x_ac488910-c3c6-4311-ae3d-8f1ab3531345_300x.webp?v=1707972466",
+        "name": "D1 MILANO SKRJ16 SKELETON RUBBER STRAP - SLICE ORANGE",
+        "price": 74000,
+        "category": "d1milano"
+    },
+    {
+        "id":"d7",
+        "img":"https://klassywatches.com/cdn/shop/files/SQBJ09_1200x_3a5a6111-f311-4847-b917-229c56fb5ec8_400x.webp?v=1708935786",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/SQBJ09_Emotional_1200x_fa099dcf-9e84-4de6-a1d7-1bf3a44295bb_600x.webp?v=1708935786",
+        "name": "D1 MILANO SQBJ09 SQUARE BRACELET 37 MM - GALAXY BLUE",
+        "price": 40300,
+        "category": "d1milano"
+    },
+    {
+        "id":"d8",
+        "img":"https://klassywatches.com/cdn/shop/files/SQBJ08_1200x_ce463348-1036-4f32-ada8-ea04aa08558d_400x.webp?v=1708935631",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/SQBJ08_Emotional_1200x_cce28d0c-9322-4aae-94c5-1aad336a3342_300x.webp?v=1708935631",
+        "name": "D1 MILANO SQBJ08 SQUARE BRACELET 37 MM - VOLCANIC GREY",
+        "price": 40300,
+        "category": "d1milano"
+    },
+    {
+        "id":"d9",
+        "img":"https://klassywatches.com/cdn/shop/files/UTBJ34_Front_1200x_a43df512-39a1-4f07-8e62-e33db0021e33_400x.webp?v=1696928073",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/UTBJ34_Emotional_1200x_4ae10908-15b6-46f1-aec9-842bf617aa02_300x.webp?v=1696928073",
+        "name": "D1 MILANO UTBJ34 ULTRA THIN 40MM - FIR GREEN",
+        "price": 38300,
+        "category": "d1milano"
+    },
+    {
+        "id":"d10",
+        "img":"https://klassywatches.com/cdn/shop/files/UTBJ32_Front_1200x_8754af1c-ada4-403a-8d16-a51c26455822_400x.webp?v=1696927508",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/UTBJ32_Emotional_1200x_078c0de5-130f-4bf1-be14-c262a0209a2b_300x.webp?v=1696927508",
+        "name": "D1 MILANO UTBJ32 ULTRA THIN 40MM - ASHFIELD",
+        "price": 38300,
         "category": "d1milano"
     }
+
 ]

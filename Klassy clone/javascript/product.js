@@ -7,7 +7,7 @@ const jsonFile = "./product.json";
 function displayProducts(productItems) {
   productContainer.innerHTML = ""; // Clear the container before displaying
   productItems.forEach((product) => {
-    const { id, img, name,imgRotate, price } = product;
+    const { id, img,name,imgRotate, price } = product;
     productContainer.innerHTML += `
       <div class="product-cart">
           <div class="main-image">
