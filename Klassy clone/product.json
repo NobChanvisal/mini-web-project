@@ -222,6 +222,158 @@
         "name": "D1 MILANO UTBJ32 ULTRA THIN 40MM - ASHFIELD",
         "price": 38300,
         "category": "d1milano"
+    },
+    {
+        "id":"co1",
+        "img":"https://klassywatches.com/cdn/shop/files/1_2000-2_400x.png?v=1691737805",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/2_2000-1_300x.png?v=1691737806",
+        "name":"Corniche La Grande Steel with Salmon dial",
+        "price":69500,
+        "category": "corniche"
+    },
+    {
+        "id":"co2",
+        "img":"https://klassywatches.com/cdn/shop/files/Untitled-2-01_400x.png?v=1685006369",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/Untitled-1-02_300x.png?v=1685007936",
+        "name":"Corniche Heritage Chronograph L'Heure d'Or Limited Edition",
+        "price":49500,
+        "category": "corniche"
+    },
+    {
+        "id":"co3",
+        "img":"https://klassywatches.com/cdn/shop/files/2k_1_400x.png?v=1694078193",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/olive2000_2_300x.png?v=1694078193",
+        "name":"Corniche La Grande Steel with Verte Olive Dial",
+        "price":69500,
+        "category": "corniche"
+    },
+    {
+        "id":"co4",
+        "img":"https://klassywatches.com/cdn/shop/products/2000_1-1_400x.png?v=1658456556",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/2000_2-1_300x.png?v=1658456556",
+        "name":"Corniche La Grande Stainless Steel with Blue dial",
+        "price":69500,
+        "category": "corniche"
+    },
+    {
+        "id":"co5",
+        "img":"https://klassywatches.com/cdn/shop/products/green1_1000x.png?v=1618813177",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/Green_zoom_300x.png?v=1618813177",
+        "name":"Corniche Heritage Chronograph Yellow Gold with Green Dial",
+        "price":42500,
+        "category": "corniche"
+    },
+    {
+        "id":"co6",
+        "img":"https://klassywatches.com/cdn/shop/products/CHC2000-1_823f9e78-9fc5-4e5e-bf90-71235b09fc1b_400x.png?v=1620893677",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/Side_SS_ea578b78-0ba6-41b6-b7cc-9720c1234680_300x.png?v=1620893677",
+        "name":"Corniche Heritage Chronograph Stainless Steel with Blue Dial",
+        "price":42500,
+        "category": "corniche"
+    },
+    {
+        "id":"co7",
+        "img":"https://klassywatches.com/cdn/shop/products/H36YGB-Front_e9d57e2e-abd3-41d7-88b2-4981bb6ae42c_400x.png?v=1620924920",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/H36YGB-Back_347078b6-d1f6-442f-bc2d-b0192de90315_300x.png?v=1620924920",
+        "name":"Corniche Women's Heritage 36 Yellow Gold with Black Dial",
+        "price":36500,
+        "category": "corniche"
+    },
+    {
+        "id":"co8",
+        "img":"https://klassywatches.com/cdn/shop/products/T_2000_Front_2833c334-07f0-4d4f-aba3-1141bab92454_400x.png?v=1620918622",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/H36TS-Side_01e517a6-f1ad-4100-8de4-e3418021a5c3_300x.png?v=1620918622",
+        "name":"Corniche Women Heritage 36 Steel with Taupe Dial",
+        "price":36500,
+        "category": "corniche"
+    },
+    {
+        "id":"da1",
+        "img":"https://klassywatches.com/cdn/shop/files/IMG_1905_400x.png?v=1690966333",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/IMG_1905_400x.png?v=1690966333",
+        "name":"David Daper Time Square Evo - 11 ST 02 M01",
+        "price":45500,
+        "category": "david-paper"
+    },
+    {
+        "id":"da2",
+        "img":"https://klassywatches.com/cdn/shop/files/IMG_1906_400x.png?v=1690966358",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/IMG_1906_400x.png?v=1690966358",
+        "name":"David Daper Time Square Evo - 11 ST 03 M01",
+        "price":45500,
+        "category": "david-paper"
+    },
+    {
+        "id":"da3",
+        "img":"https://klassywatches.com/cdn/shop/files/IMG_1903_400x.png?v=1690966376",
+        "imgRotate":"https://klassywatches.com/cdn/shop/files/IMG_1903_400x.png?v=1690966376",
+        "name":"David Daper Time Square Evo - 11 YG 01 M01",
+        "price":50800,
+        "category": "david-paper"
+    },
+    {
+        "id":"e1",
+        "img":"https://klassywatches.com/cdn/shop/products/WHITE-NEONZ-42mm-transparentLight_400x.png?v=1666164830",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/WHITE-NEONZ-42mm-LED-transparentLight_300x.png?v=1666165412",
+        "name":"Electricianz The Neon Z White 42mm",
+        "price":32500,
+        "category": "electrician"
+    },
+    {
+        "id":"e2",
+        "img":"https://klassywatches.com/cdn/shop/products/BLACK-NEONZ-42mm-transparentLight_400x.png?v=1666231089",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/BLACK-NEONZ-42mm-LED-transparentLight_300x.png?v=1666231106",
+        "name":"Electricianz The Neon Z Black 42mm",
+        "price":32500,
+        "category": "electrician"
+    },
+    {
+        "id":"e3",
+        "img":"https://klassywatches.com/cdn/shop/products/Copiede01--The-Stone-Z---Metal-Band---Packshot---Front-_white-bg_1_400x.png?v=1646621658",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/Copiede02--The-Stone-Z---Metal-Band---Packshot---SIDE-_white-bg_300x.png?v=1646621658",
+        "name":"Electricianz The Stone Z Metal Bracelet 45mm",
+        "price":49500,
+        "category": "electrician"
+    },
+    {
+        "id":"e4",
+        "img":"https://klassywatches.com/cdn/shop/products/BrownZmetal_400x.png?v=1646621576",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/TheBrownZ-Steel-isometricview._300x.png?v=1646621576",
+        "name":"Electricianz The Brown Z Metal Bracelet 45mm",
+        "price":49500,
+        "category": "electrician"
+    },
+    {
+        "id":"e5",
+        "img":"https://klassywatches.com/cdn/shop/products/The-Blue-Z---rubber---Front-view-_white-bg_1_400x.png?v=1646621779",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/The-Blue-Z---Rubber---isometric-view_300x.png?v=1646621779",
+        "name":"Electricianz The Blue Z Blue Rubber 45mm",
+        "price":44500,
+        "category": "electrician"
+    },
+    {
+        "id":"e6",
+        "img":"https://klassywatches.com/cdn/shop/products/BlueZmetal_400x.png?v=1646621823",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/BlueZmetal-3_300x.png?v=1646621823",
+        "name":"Electricianz The Blue Z Metal Bracelet 45mm",
+        "price":49500,
+        "category": "electrician"
+    },
+    {
+        "id":"e7",
+        "img":"https://klassywatches.com/cdn/shop/products/The-Carbon-Z--Packshot---FRONT---Transparent-background_400x.png?v=1646362958",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/The-Carbon-Z--Packshot---SIDE---Transparent-background_300x.png?v=1646362958",
+        "name":"Electricianz The Carbon Z 42mm on leather strap",
+        "price":29500,
+        "category": "electrician"
+    },
+    {
+        "id":"e8",
+        "img":"https://klassywatches.com/cdn/shop/products/The-Cable-Z--Packshot---FRONT---Transparent-background_400x.png?v=1646299865",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/The-Cable-Z--Packshot---SIDE---Transparent-background_300x.png?v=1646299865",
+        "name":"Electricianz The Cable Z 42mm on fabric strap",
+        "price":29500,
+        "category": "electrician"
     }
 
 ]

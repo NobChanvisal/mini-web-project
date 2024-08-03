@@ -36,6 +36,14 @@ fetch(jsonFile)
       btn.addEventListener("click", (e) => {
         const category = e.currentTarget.dataset.id; // Get the filter category
         
+        // Remove any existing animation classes to reset the animation
+        productContainer.classList.remove('animate__animated', 'animate__zoomIn');
+
+        // Use a timeout to ensure the class removal is processed
+        setTimeout(() => {
+          // Add animation class to product container
+          productContainer.classList.add('animate__animated', 'animate__zoomIn');
+        }, 5);
         // Toggle active class on filter buttons
         document.querySelector('.filter-button.active')?.classList.remove('active');
         btn.classList.add('active');
