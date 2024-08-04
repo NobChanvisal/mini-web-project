@@ -5,6 +5,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/files/Q-36_300x.png?v=1707151958",
         "name":"ZINVO BLADE DRAGON",
         "price": 43000,
+        "qty":1,
         "category": "zinvo"
     },
     {
@@ -13,6 +14,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/files/L-27-OKcopy_300x.png?v=1700631492",
         "name": "ZINVO BLADE WOMEN TRIFECTA",
         "price": 39000,
+        "qty":1,
         "category": "zinvo"
     },
     {
@@ -21,6 +23,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/files/L-28-OKcopy2_300x.png?v=1707148122",
         "name": "ZINVO BLADE TRIFECTA",
         "price": 41000,
+        "qty":1,
         "category": "zinvo"
     },
     {
@@ -29,6 +32,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/files/6x_300x.png?v=1700153579",
         "name": "Zinvo Rival 12",
         "price":35000,
+        "qty":1,
         "category": "zinvo"
     },
     {
@@ -36,6 +40,7 @@
         "img" : "https://klassywatches.com/cdn/shop/files/s3081024_400x.png?v=1694017239",
         "imgRotate":"https://klassywatches.com/cdn/shop/files/s3091024_300x.png?v=1694017239",
         "price":27500,
+        "qty":1,
         "name": "Zinvo Rival Mirage",
         "category": "zinvo"
     },
@@ -45,6 +50,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/files/Q-3put_3_400x.png?v=1694111082",
         "name":"Zinvo Blade Black Magic Gem",
         "price": 41000,
+        "qty":1,
         "category": "zinvo"
     },
     {
@@ -53,6 +59,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/files/2_After-2_300x.png?v=1694110973",
         "name": "Zinvo Blade Volt Gem",
         "price": 41000,
+        "qty":1,
         "category": "zinvo"
     },
     {
@@ -61,6 +68,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/files/s163x_3_1_300x.png?v=1694111107",
         "name": "Zinvo Blade Cobalt Gem",
         "price": 41000,
+        "qty":1,
         "category": "zinvo"
     },
     {
@@ -69,6 +77,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/files/Purple_2_300x.png?v=1691511900",
         "name": "Zinvo Blade Women Violet Gem",
         "price": 39000,
+        "qty":1,
         "category": "zinvo"
     },
     {
@@ -77,6 +86,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/files/Green_2_300x.png?v=1691511917",
         "name": "Zinvo Blade Women Emerald Gem",
         "price": 39000,
+        "qty":1,
         "category": "zinvo"
     },
     {
@@ -85,6 +95,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/Addingnumbersaroundacircle2_1_400x.png?v=1694110996",
         "name": "Zinvo Blade Cyan",
         "price": 35000,
+        "qty":1,
         "category": "zinvo"
     },
     {
@@ -93,6 +104,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/Q-12putcopy_300x.png?v=1718294695",
         "name": "Zinvo Rival Silver Gem",
         "price": 32500,
+        "qty":1,
         "category": "zinvo"
     },
     {
@@ -101,6 +113,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/Q-11putcopy_300x.png?v=1675884126",
         "name":"Zinvo Rival Fury Gem",
         "price":33500,
+        "qty":1,
         "category":"zinvo"
     },
     {
@@ -109,6 +122,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/2put_300x.png?v=1640856729",
         "name":"Zinvo Chrono Marine",
         "price":37000,
+        "qty":1,
         "category":"zinvo"
     },
     {
@@ -117,6 +131,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/5put_e5abbecb-5f89-41a5-9806-d1794e267492_300x.png?v=1647247042",
         "name":"Zinvo Chrono Venom",
         "price":37000,
+        "qty":1,
         "category":"zinvo"
     },
     {
@@ -125,6 +140,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/s14_After_8450a95a-8a94-459e-98cd-0efc6f3840c1_300x.png?v=1659686766",
         "name":"Zinvo Blade Ultraman Red",
         "price":65000,
+        "qty":1,
         "category":"zinvo"
     },
     {
@@ -133,6 +149,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/s15_After_95b091ae-0149-4395-be89-1622f6561c17_300x.png?v=1659687097",
         "name":"Zinvo Blade Ultraman Blue",
         "price":65000,
+        "qty":1,
         "category":"zinvo"
     },
     {
@@ -141,6 +158,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/s16_After_f3ccfa3e-51d4-467c-940f-440e3e6d15a8_300x.png?v=1659687109",
         "name":"ZZinvo Blade Ultraman Black",
         "price":65000,
+        "qty":1,
         "category":"zinvo"
     },
     {
@@ -149,6 +167,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/files/UTBL34_Emotional_600x.png?v=1707710007",
         "name": "D1 MILANO UTBL34 ULTRA THIN BRACELET 30 MM - EDGE",
         "price": 40300,
+        "qty":1,
         "category": "d1milano"
     },
     {
@@ -157,6 +176,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/files/UTBL33_Emotional_600x.png?v=1707709800",
         "name": "D1 MILANO UTBL33 ULTRA THIN BRACELET 30 MM - ASTRAL NIGHT",
         "price": 40300,
+        "qty":1,
         "category": "d1milano"
     },
     {
@@ -165,6 +185,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/files/UTBL32_Emotional_600x.png?v=1707709606",
         "name": "D1 MILANO UTBL32 ULTRA THIN BRACELET 30 MM - ULTIMATE GREY",
         "price": 40300,
+        "qty":1,
         "category": "d1milano"
     },
     {
@@ -173,6 +194,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/files/UTBL31_Emotional_800x.png?v=1707709307",
         "name": "D1 MILANO UTBL31 ULTRA THIN BRACELET 30 MM - ZEPHYR GOLD",
         "price": 40300,
+        "qty":1,
         "category": "d1milano"
     },
     {
@@ -181,6 +203,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/files/SKRJ16_Emotional_1200x_1e1cfd87-ebef-4e92-b038-16e7cd16543d_600x.webp?v=1707972635",
         "name": "D1 MILANO SKRJ16 SKELETON RUBBER STRAP - SLICE ORANGE",
         "price": 74000,
+        "qty":1,
         "category": "d1milano"
     },
     {
@@ -189,6 +212,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/files/SKRJ15_Emotional_1200x_ac488910-c3c6-4311-ae3d-8f1ab3531345_300x.webp?v=1707972466",
         "name": "D1 MILANO SKRJ16 SKELETON RUBBER STRAP - SLICE ORANGE",
         "price": 74000,
+        "qty":1,
         "category": "d1milano"
     },
     {
@@ -197,6 +221,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/files/SQBJ09_Emotional_1200x_fa099dcf-9e84-4de6-a1d7-1bf3a44295bb_600x.webp?v=1708935786",
         "name": "D1 MILANO SQBJ09 SQUARE BRACELET 37 MM - GALAXY BLUE",
         "price": 40300,
+        "qty":1,
         "category": "d1milano"
     },
     {
@@ -205,6 +230,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/files/SQBJ08_Emotional_1200x_cce28d0c-9322-4aae-94c5-1aad336a3342_300x.webp?v=1708935631",
         "name": "D1 MILANO SQBJ08 SQUARE BRACELET 37 MM - VOLCANIC GREY",
         "price": 40300,
+        "qty":1,
         "category": "d1milano"
     },
     {
@@ -213,6 +239,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/files/UTBJ34_Emotional_1200x_4ae10908-15b6-46f1-aec9-842bf617aa02_300x.webp?v=1696928073",
         "name": "D1 MILANO UTBJ34 ULTRA THIN 40MM - FIR GREEN",
         "price": 38300,
+        "qty":1,
         "category": "d1milano"
     },
     {
@@ -221,6 +248,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/files/UTBJ32_Emotional_1200x_078c0de5-130f-4bf1-be14-c262a0209a2b_300x.webp?v=1696927508",
         "name": "D1 MILANO UTBJ32 ULTRA THIN 40MM - ASHFIELD",
         "price": 38300,
+        "qty":1,
         "category": "d1milano"
     },
     {
@@ -229,6 +257,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/files/2_2000-1_300x.png?v=1691737806",
         "name":"Corniche La Grande Steel with Salmon dial",
         "price":69500,
+        "qty":1,
         "category": "corniche"
     },
     {
@@ -237,6 +266,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/files/Untitled-1-02_300x.png?v=1685007936",
         "name":"Corniche Heritage Chronograph L'Heure d'Or Limited Edition",
         "price":49500,
+        "qty":1,
         "category": "corniche"
     },
     {
@@ -245,6 +275,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/olive2000_2_300x.png?v=1694078193",
         "name":"Corniche La Grande Steel with Verte Olive Dial",
         "price":69500,
+        "qty":1,
         "category": "corniche"
     },
     {
@@ -253,6 +284,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/2000_2-1_300x.png?v=1658456556",
         "name":"Corniche La Grande Stainless Steel with Blue dial",
         "price":69500,
+        "qty":1,
         "category": "corniche"
     },
     {
@@ -261,6 +293,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/Green_zoom_300x.png?v=1618813177",
         "name":"Corniche Heritage Chronograph Yellow Gold with Green Dial",
         "price":42500,
+        "qty":1,
         "category": "corniche"
     },
     {
@@ -269,6 +302,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/Side_SS_ea578b78-0ba6-41b6-b7cc-9720c1234680_300x.png?v=1620893677",
         "name":"Corniche Heritage Chronograph Stainless Steel with Blue Dial",
         "price":42500,
+        "qty":1,
         "category": "corniche"
     },
     {
@@ -277,6 +311,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/H36YGB-Back_347078b6-d1f6-442f-bc2d-b0192de90315_300x.png?v=1620924920",
         "name":"Corniche Women's Heritage 36 Yellow Gold with Black Dial",
         "price":36500,
+        "qty":1,
         "category": "corniche"
     },
     {
@@ -285,6 +320,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/H36TS-Side_01e517a6-f1ad-4100-8de4-e3418021a5c3_300x.png?v=1620918622",
         "name":"Corniche Women Heritage 36 Steel with Taupe Dial",
         "price":36500,
+        "qty":1,
         "category": "corniche"
     },
     {
@@ -293,6 +329,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/files/IMG_1905_400x.png?v=1690966333",
         "name":"David Daper Time Square Evo - 11 ST 02 M01",
         "price":45500,
+        "qty":1,
         "category": "david-paper"
     },
     {
@@ -301,6 +338,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/files/IMG_1906_400x.png?v=1690966358",
         "name":"David Daper Time Square Evo - 11 ST 03 M01",
         "price":45500,
+        "qty":1,
         "category": "david-paper"
     },
     {
@@ -309,6 +347,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/files/IMG_1903_400x.png?v=1690966376",
         "name":"David Daper Time Square Evo - 11 YG 01 M01",
         "price":50800,
+        "qty":1,
         "category": "david-paper"
     },
     {
@@ -317,6 +356,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/WHITE-NEONZ-42mm-LED-transparentLight_300x.png?v=1666165412",
         "name":"Electricianz The Neon Z White 42mm",
         "price":32500,
+        "qty":1,
         "category": "electrician"
     },
     {
@@ -325,6 +365,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/BLACK-NEONZ-42mm-LED-transparentLight_300x.png?v=1666231106",
         "name":"Electricianz The Neon Z Black 42mm",
         "price":32500,
+        "qty":1,
         "category": "electrician"
     },
     {
@@ -333,6 +374,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/Copiede02--The-Stone-Z---Metal-Band---Packshot---SIDE-_white-bg_300x.png?v=1646621658",
         "name":"Electricianz The Stone Z Metal Bracelet 45mm",
         "price":49500,
+        "qty":1,
         "category": "electrician"
     },
     {
@@ -341,6 +383,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/TheBrownZ-Steel-isometricview._300x.png?v=1646621576",
         "name":"Electricianz The Brown Z Metal Bracelet 45mm",
         "price":49500,
+        "qty":1,
         "category": "electrician"
     },
     {
@@ -349,6 +392,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/The-Blue-Z---Rubber---isometric-view_300x.png?v=1646621779",
         "name":"Electricianz The Blue Z Blue Rubber 45mm",
         "price":44500,
+        "qty":1,
         "category": "electrician"
     },
     {
@@ -357,6 +401,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/BlueZmetal-3_300x.png?v=1646621823",
         "name":"Electricianz The Blue Z Metal Bracelet 45mm",
         "price":49500,
+        "qty":1,
         "category": "electrician"
     },
     {
@@ -365,6 +410,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/The-Carbon-Z--Packshot---SIDE---Transparent-background_300x.png?v=1646362958",
         "name":"Electricianz The Carbon Z 42mm on leather strap",
         "price":29500,
+        "qty":1,
         "category": "electrician"
     },
     {
@@ -373,6 +419,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/The-Cable-Z--Packshot---SIDE---Transparent-background_300x.png?v=1646299865",
         "name":"Electricianz The Cable Z 42mm on fabric strap",
         "price":29500,
+        "qty":1,
         "category": "electrician"
     },
     {
@@ -381,6 +428,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/AU140-2_1600x_d46a6805-9c80-4fb2-8cd9-5e6b0c21a64b_400x.png?v=1655108008",
         "name":"MSTR AU140SS Ambassador Ultra Slim Rose Gold",
         "price":25000,
+        "qty":1,
         "category": "meister"
     },
     {
@@ -389,6 +437,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/AU138-2_1600x_36bbd445-2985-4eb2-a558-bbc80dd2352a_400x.png?v=1655105993",
         "name":"MSTR AU138SS Ambassador Ultra Slim Gunmetal Steel Band",
         "price":25000,
+        "qty":1,
         "category": "meister"
     },
     {
@@ -397,6 +446,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/Venom-lb-1_1_1600x_c8e90b65-31f9-4deb-9ab7-f1bde0d14525_400x.png?v=1648021932",
         "name":"MSTR AM1024MVLB Venom Ambassador Black Leather",
         "price":30000,
+        "qty":1,
         "category": "meister"
     },
     {
@@ -405,6 +455,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/deadpool-3_1600x_1e694214-03d0-4b91-bdb2-624c76158a9e_400x.png?v=1648011494",
         "name":"MSTR AM272MV Deadpool Ultra Matte Black Leather Band",
         "price":25000,
+        "qty":1,
         "category": "meister"
     },
     {
@@ -413,6 +464,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/cpt-america-2_1600x_997d05ba-08ab-4b45-8425-698569610935_400x.png?v=1648005636",
         "name":"MSTR AM281MV MK4 Captain America Blue",
         "price":30000,
+        "qty":1,
         "category": "meister"
     },
     {
@@ -421,6 +473,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/AX122RB-3_1600x_cf8b2f70-00e3-4ec5-b732-98c1d699493f_400x.png?v=1646714312",
         "name":"MSTR AX122RB Ambassador X Green Rubber Band",
         "price":15000,
+        "qty":1,
         "category": "meister"
     },
     {
@@ -429,6 +482,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/0007_Layer4_1600x_5b91ef6a-353c-435d-896e-9a3c26052498_400x.png?v=1646793022",
         "name":"MSTR AX124RB Ambassador X Gold Rubber Band",
         "price":15000,
+        "qty":1,
         "category": "meister"
     },
     {
@@ -437,6 +491,7 @@
         "imgRotate":"https://klassywatches.com/cdn/shop/products/AM264SS-3_1600x_a002bbec-91f7-4a1e-bd76-4e058cf6ff8d_400x.png?v=1640158579",
         "name":"MSTR AM264SS Ambassador MK4 Steel Band",
         "price":30000,
+        "qty":1,
         "category": "meister"
     }
 
