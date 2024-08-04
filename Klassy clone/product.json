@@ -374,6 +374,70 @@
         "name":"Electricianz The Cable Z 42mm on fabric strap",
         "price":29500,
         "category": "electrician"
+    },
+    {
+        "id":"me1",
+        "img":"https://klassywatches.com/cdn/shop/products/AU140-1_1600x_ed7ba5bb-3d27-444b-a938-f70766c41233_400x.png?v=1655108007",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/AU140-2_1600x_d46a6805-9c80-4fb2-8cd9-5e6b0c21a64b_400x.png?v=1655108008",
+        "name":"MSTR AU140SS Ambassador Ultra Slim Rose Gold",
+        "price":25000,
+        "category": "meister"
+    },
+    {
+        "id":"me2",
+        "img":"https://klassywatches.com/cdn/shop/products/AU138-3_1600x_94da4e21-f61d-44fb-bfdb-0a1bbe1aadc1_400x.png?v=1655105993",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/AU138-2_1600x_36bbd445-2985-4eb2-a558-bbc80dd2352a_400x.png?v=1655105993",
+        "name":"MSTR AU138SS Ambassador Ultra Slim Gunmetal Steel Band",
+        "price":25000,
+        "category": "meister"
+    },
+    {
+        "id":"me3",
+        "img":"https://klassywatches.com/cdn/shop/products/Venom-lb-3_1600x_c9bc35ef-412f-4359-bb90-dbc3f320d9b8_400x.png?v=1648021932",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/Venom-lb-1_1_1600x_c8e90b65-31f9-4deb-9ab7-f1bde0d14525_400x.png?v=1648021932",
+        "name":"MSTR AM1024MVLB Venom Ambassador Black Leather",
+        "price":30000,
+        "category": "meister"
+    },
+    {
+        "id":"me4",
+        "img":"https://klassywatches.com/cdn/shop/products/deadpool-1_1600x_03bbc2b4-4fbd-44e8-aad7-3b4a6ef299fb_400x.png?v=1648011486",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/deadpool-3_1600x_1e694214-03d0-4b91-bdb2-624c76158a9e_400x.png?v=1648011494",
+        "name":"MSTR AM272MV Deadpool Ultra Matte Black Leather Band",
+        "price":25000,
+        "category": "meister"
+    },
+    {
+        "id":"me5",
+        "img":"https://klassywatches.com/cdn/shop/products/cpt-america-1_1600x_65613eca-bd4b-472d-81ee-a665e1dd56af_400x.png?v=1648005637",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/cpt-america-2_1600x_997d05ba-08ab-4b45-8425-698569610935_400x.png?v=1648005636",
+        "name":"MSTR AM281MV MK4 Captain America Blue",
+        "price":30000,
+        "category": "meister"
+    },
+    {
+        "id":"me6",
+        "img":"https://klassywatches.com/cdn/shop/products/AX122RB-1_1600x_f9b6747f-e1a8-491d-9739-b600790446d8_400x.png?v=1646714312",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/AX122RB-3_1600x_cf8b2f70-00e3-4ec5-b732-98c1d699493f_400x.png?v=1646714312",
+        "name":"MSTR AX122RB Ambassador X Green Rubber Band",
+        "price":15000,
+        "category": "meister"
+    },
+    {
+        "id":"me7",
+        "img":"https://klassywatches.com/cdn/shop/products/0005_AmbX_JU-Steelers-3copy_1600x_c95c6e73-41bb-43c9-9b8b-66a6560d8e1b_400x.png?v=1646793022",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/0007_Layer4_1600x_5b91ef6a-353c-435d-896e-9a3c26052498_400x.png?v=1646793022",
+        "name":"MSTR AX124RB Ambassador X Gold Rubber Band",
+        "price":15000,
+        "category": "meister"
+    },
+    {
+        "id":"me8",
+        "img":"https://klassywatches.com/cdn/shop/products/AM264SS-2_1600x_9c24fb72-4651-462a-a4cb-1b31232ea81b_400x.png?v=1640158579",
+        "imgRotate":"https://klassywatches.com/cdn/shop/products/AM264SS-3_1600x_a002bbec-91f7-4a1e-bd76-4e058cf6ff8d_400x.png?v=1640158579",
+        "name":"MSTR AM264SS Ambassador MK4 Steel Band",
+        "price":30000,
+        "category": "meister"
     }
 
 ]

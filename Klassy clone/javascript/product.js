@@ -1,4 +1,4 @@
-// Define the container for product items and filter buttons
+// product.js
 const productContainer = document.querySelector(".js-item-grid");
 const filterBtns = document.querySelectorAll(".filter-button");
 const jsonFile = "./product.json";
@@ -9,7 +9,7 @@ function displayProducts(productItems) {
   productItems.forEach((product) => {
     const { id, img,name,imgRotate, price } = product;
     productContainer.innerHTML += `
-      <div class="product-cart">
+      <div class="product-cart " onclick="handleProductClick('${id}')" data-proid="${id}">
           <div class="main-image">
               <img class="product-image" src="${img}" alt=""/>
               <img class="product-rotate-image" src="${imgRotate}" alt= ""/>
@@ -22,7 +22,10 @@ function displayProducts(productItems) {
     `;
   });
 }
-
+// Function to handle product click and redirect to order.html with product ID
+function handleProductClick(productId) {
+  location.href = `order.html?productId=${productId}`;
+} 
 // Fetch the product data
 fetch(jsonFile)
   .then((response) => response.json())
