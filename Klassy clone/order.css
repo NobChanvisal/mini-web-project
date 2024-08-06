@@ -113,7 +113,6 @@
 .add-button:hover{
     background-color: white;
     color: black;
-    border: none;
 }
 .buy-button{
     background-color: black;
@@ -123,4 +122,89 @@
 }
 .buy-button:hover{
     background-color: rgb(43, 40, 40);
+}
+.right-section i{
+    cursor: pointer;
+}
+.cart-side-bar{
+    width: 400px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 1001;
+    display: none;
+    opacity: 0;
+}
+.cart-side-bar.active{
+    opacity: 1;
+    display: block;
+}
+.cart-side-bar .header{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    border-bottom: 1px solid #e0e1dd;
+}
+.cart-side-bar .header p{
+    letter-spacing: 0.2em;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.cart-side-bar .header i{
+    font-size: 25px;
+    cursor: pointer;
+}
+.js-cart-item{
+    width: 100%;
+}
+.item-cart{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    padding: 20px;
+}
+.item-cart .left img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+}
+.right .cart-name{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.right span{
+    font-size: 11px;
+    color: #6a6a6a;
+}
+.edit{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.edit .qty-contain{
+    margin: 0;
+}
+.edit .qty-contain span{
+    padding: 10px 15px;
+    font-size: 14px;
+}
+.remove-button{
+    letter-spacing: 0.2em;
+    color: #6a6a6a;
+    font-size: 10px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+    text-transform: uppercase;
 }

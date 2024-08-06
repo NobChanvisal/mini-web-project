@@ -10,6 +10,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -43,9 +47,16 @@
         </div>
       </div>
     </header>
+    <div class="cart-side-bar animate__animated animate__bounceInRight">
+      <div class="header">
+        <p>cart</p>
+        <i class='bx bx-x'></i>
+      </div>
+      <div class="cart-item js-cart-item"></div>
+    </div>
     <div class="order-container">
       <div id="order-details" class="order-cart"></div>
     </div>
-    <script src="javascript/order.js"></script>
+    <script type="module" src="javascript/order.js"></script>
   </body>
 </html>
