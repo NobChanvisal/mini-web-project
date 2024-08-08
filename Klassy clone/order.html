@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="image/glassyLogo.png" type="image/x-icon" />
     <title>Order Details</title>
     <link rel="stylesheet" href="order.css" />
     <link rel="stylesheet" href="productStyle.css" />
@@ -35,7 +36,10 @@
             <div class="group-icon">
               <i class="bx bx-user"></i>
               <i class="bx bx-search"></i>
-              <i class="bx bx-shopping-bag"></i>
+              <div class="shopping-bag">
+                <span class="alert-qty"></span>
+                <i class="bx bx-shopping-bag"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -47,12 +51,18 @@
         </div>
       </div>
     </header>
-    <div class="cart-side-bar animate__animated animate__bounceInRight">
+    <div class="overlay"></div>
+    <div class="cart-side-bar animate__animated animate__bounceInRight ">
       <div class="header">
         <p>cart</p>
         <i class='bx bx-x'></i>
       </div>
       <div class="cart-item js-cart-item"></div>
+      <div class="footer-cart">
+        <h4>Add Order Note</h4>
+        <p>Shipping & taxes calculated at checkout</p>
+        <button>checkout <span class="total-price"></span></button>
+      </div>
     </div>
     <div class="order-container">
       <div id="order-details" class="order-cart"></div>

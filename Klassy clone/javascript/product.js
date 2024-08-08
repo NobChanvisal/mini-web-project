@@ -1,6 +1,7 @@
 // product.js
 const productContainer = document.querySelector(".js-item-grid");
 const filterBtns = document.querySelectorAll(".filter-button");
+const sidebar = document.querySelector(".side-bar");
 const jsonFile = "./product.json";
 
 // Function to display products in the grid
@@ -60,3 +61,11 @@ fetch(jsonFile)
       });
     });
   });
+  document.querySelector('.sort-button').addEventListener("click", ()=>{
+    sidebar.classList.add('active');
+  });
+  document.querySelector('.bx-x-circle').addEventListener("click",()=>{
+    sidebar.classList.remove('active');
+  })
+  
+  

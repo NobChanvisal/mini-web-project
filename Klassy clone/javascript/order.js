@@ -1,11 +1,12 @@
-import { cart } from './cart.js';
+import { cart } from "./cart.js";
 
-window.addEventListener('load', () => {
-  const storedCart = localStorage.getItem('cart');
+window.addEventListener("load", () => {
+  const storedCart = localStorage.getItem("cart");
   if (storedCart) {
     cart.length = 0; // Clear the current cart
     Array.prototype.push.apply(cart, JSON.parse(storedCart));
     displayCartItems();
+    totalprice();
   }
 });
 
@@ -16,15 +17,15 @@ function getQueryParam(param) {
 }
 
 // Fetch the product ID from the URL
-const productId = getQueryParam('productId');
+const productId = getQueryParam("productId");
 
 // Fetch product details from JSON file
-fetch('./product.json')
+fetch("./product.json")
   .then((response) => response.json())
   .then((data) => {
     const product = data.find((item) => item.id === productId);
     if (product) {
-      document.getElementById('order-details').innerHTML = `
+      document.getElementById("order-details").innerHTML = `
         <div class="order-main-img animate__animated animate__fadeInDown">
           <div class="order-img">
             <img class="product-image active" src="${product.img}" alt="${product.name}" />
@@ -39,9 +40,9 @@ fetch('./product.json')
           <h2>${product.name}</h2>
           <p>$${(product.price / 100).toFixed(2)}</p>
           <div class="qty-contain">
-            <span class="sub">-</span>
-            <span class="qty">${product.qty}</span>
-            <span class="add">+</span>
+            <span class="qty-sub">-</span>
+            <span class="qty-span">${product.qty}</span>
+            <span class="qty-add">+</span>
           </div>
           <button class="add-button">Add to cart</button>
           <button class="buy-button">Buy it now</button>
@@ -49,24 +50,24 @@ fetch('./product.json')
       `;
 
       // Select elements after the HTML content is added
-      const subBtn = document.querySelector('.sub');
-      const addBtn = document.querySelector('.add');
-      const qtySpan = document.querySelector('.qty');
+      const subBtn = document.querySelector(".qty-sub");
+      const addBtn = document.querySelector(".qty-add");
+      const qtySpan = document.querySelector(".qty-span");
 
-      addBtn.addEventListener('click', () => {
+      addBtn.addEventListener("click", () => {
         product.qty += 1;
         qtySpan.textContent = product.qty;
       });
 
-      subBtn.addEventListener('click', () => {
+      subBtn.addEventListener("click", () => {
         if (product.qty > 1) {
           product.qty -= 1;
           qtySpan.textContent = product.qty;
         }
       });
 
-      const addToCartButton = document.querySelector('.add-button');
-      addToCartButton.addEventListener('click', () => {
+      const addToCartButton = document.querySelector(".add-button");
+      addToCartButton.addEventListener("click", () => {
         let matchingItem = cart.find((item) => item.id === productId);
 
         if (matchingItem) {
@@ -76,49 +77,65 @@ fetch('./product.json')
         }
         saveCart();
         displayCartItems();
+        totalprice();
       });
 
-      const tapButtons = document.querySelectorAll('.js-tap-button');
+      const tapButtons = document.querySelectorAll(".js-tap-button");
       tapButtons.forEach((btn) => {
-        btn.addEventListener('click', (e) => {
+        btn.addEventListener("click", (e) => {
           const image = e.currentTarget.dataset.image;
 
           // Toggle active class on buttons
-          document.querySelector('.js-tap-button.active')?.classList.remove('active');
-          btn.classList.add('active');
+          document.querySelector(".js-tap-button.active")?.classList.remove("active");
+          btn.classList.add("active");
 
           // Toggle images
-          const productImage = document.querySelector('.product-image');
-          const productRotate = document.querySelector('.product-rotate-image');
-          if (image === 'front') {
-            productImage.classList.add('active');
-            productRotate.classList.remove('active');
+          const productImage = document.querySelector(".product-image");
+          const productRotate = document.querySelector(".product-rotate-image");
+          if (image === "front") {
+            productImage.classList.add("active");
+            productRotate.classList.remove("active");
           }
-          if (image === 'back') {
-            productRotate.classList.add('active');
-            productImage.classList.remove('active');
+          if (image === "back") {
+            productRotate.classList.add("active");
+            productImage.classList.remove("active");
           }
         });
       });
     }
   });
 
-const sidebar = document.querySelector('.cart-side-bar');
-const shoppingBag = document.querySelector('.bx-shopping-bag');
-
-shoppingBag.addEventListener('click', () => {
-  sidebar.classList.add('active');
-  displayCartItems();
-});
-
-document.querySelector('.bx-x').addEventListener('click', () => {
-  sidebar.classList.remove('active');
-});
-
+  const sidebar = document.querySelector(".cart-side-bar");
+  const shoppingBag = document.querySelector(".bx-shopping-bag");
+  const overlay = document.querySelector(".overlay");
+  
+  shoppingBag.addEventListener("click", () => {
+    overlay.classList.add("active");
+    sidebar.classList.add("active");
+    displayCartItems();
+  });
+  
+  document.querySelector(".bx-x").addEventListener("click", () => {
+    overlay.classList.remove("active");
+    sidebar.classList.add("animate__bounceOutRight");
+    sidebar.addEventListener("animationend", () => {
+      sidebar.classList.remove("active");
+      sidebar.classList.remove("animate__bounceOutRight");
+    }, { once: true });
+  });
+  
+  overlay.addEventListener("click", (e) => {
+    overlay.classList.remove("active");
+    sidebar.classList.add("animate__bounceOutRight");
+    sidebar.addEventListener("animationend", () => {
+      sidebar.classList.remove("active");
+      sidebar.classList.remove("animate__bounceOutRight");
+    }, { once: true });
+  });
 // Function to display cart items in the sidebar
 function displayCartItems() {
-  const cartItemContainer = document.querySelector('.js-cart-item');
-  cartItemContainer.innerHTML = ''; // Clear previous items
+  const cartItemContainer = document.querySelector(".js-cart-item");
+  cartItemContainer.innerHTML = ""; // Clear previous items
 
   cart.forEach((item) => {
     const { img, qty, name, price } = item;
@@ -144,33 +161,47 @@ function displayCartItems() {
   });
 
   // Add event listeners to update quantity and remove items
-  cartItemContainer.querySelectorAll('.sub').forEach((button, index) => {
-    button.addEventListener('click', () => {
+  cartItemContainer.querySelectorAll(".sub").forEach((button, index) => {
+    button.addEventListener("click", () => {
       if (cart[index].qty > 1) {
         cart[index].qty -= 1;
         saveCart();
         displayCartItems();
+        totalprice();
       }
     });
   });
 
-  cartItemContainer.querySelectorAll('.add').forEach((button, index) => {
-    button.addEventListener('click', () => {
+  cartItemContainer.querySelectorAll(".add").forEach((button, index) => {
+    button.addEventListener("click", () => {
       cart[index].qty += 1;
       saveCart();
       displayCartItems();
+      totalprice();
     });
   });
 
-  cartItemContainer.querySelectorAll('.remove-button').forEach((button, index) => {
-    button.addEventListener('click', () => {
+  cartItemContainer.querySelectorAll(".remove-button").forEach((button, index) => {
+    button.addEventListener("click", () => {
       cart.splice(index, 1);
       saveCart();
       displayCartItems();
+      totalprice();
     });
   });
 }
 
+function totalprice() {
+  let total = 0;
+  cart.forEach((item) => {
+    total += item.price * item.qty;
+  });
+  document.querySelector(".total-price").innerHTML = `$ ${(total / 100).toFixed(2)}`;
+  if(cart.length > 0){
+    document.querySelector(".alert-qty").classList.add("active");
+  }
+}
+
 function saveCart() {
-  localStorage.setItem('cart', JSON.stringify(cart));
+  localStorage.setItem("cart", JSON.stringify(cart));
 }

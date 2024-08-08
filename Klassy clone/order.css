@@ -1,210 +1,262 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.order-container{
-    width: 100vw;
-    display: flex;
-    padding-top: 150px;
-    justify-content: center;
+.order-container {
+  width: 100vw;
+  display: flex;
+  padding-top: 150px;
+  justify-content: center;
 }
-.order-cart{
-    padding-top: 20px;
-    width: 100%;
-    max-width: 1330px;
-    display: grid;
-    grid-template-columns: 1fr 550px;
-    justify-items: center;
+.order-cart {
+  padding-top: 20px;
+  width: 100%;
+  max-width: 1330px;
+  display: grid;
+  grid-template-columns: 1fr 550px;
+  justify-items: center;
 }
-.order-main-img{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.order-main-img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.order-img{
-    width: 100%;
-    max-width: 500px;
-    position: relative;
+.order-img {
+  width: 100%;
+  max-width: 500px;
+  position: relative;
 }
-.order-img img{
-    width: 100%;
-    object-fit: contain;
+.order-img img {
+  width: 100%;
+  object-fit: contain;
 }
-.order-img .product-image{
-    opacity: 0;
+.order-img .product-image {
+  opacity: 0;
 }
-.order-img .product-image.active{
-    opacity: 1;
+.order-img .product-image.active {
+  opacity: 1;
 }
-.order-img .product-rotate-image{
-    max-width: 500px;
-    max-height: 500px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
+.order-img .product-rotate-image {
+  max-width: 500px;
+  max-height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
 }
-.order-img .product-rotate-image.active{
-    opacity: 1;
+.order-img .product-rotate-image.active {
+  opacity: 1;
 }
-.bottom-img{
-    padding-top: 20px;
+.bottom-img {
+  padding: 25px 0;
 }
-.bottom-img img{
-    width: 68px;
-    height: 68px;
-    display: inline-block;
-    margin: 10px;
-    padding: 5px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    cursor: pointer;
+.bottom-img img {
+  width: 68px;
+  height: 68px;
+  display: inline-block;
+  margin: 10px;
+  padding: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
 }
-.bottom-img img.active{
-    border: 1px solid black;
-    box-shadow: none;
+.bottom-img img.active {
+  border: 1px solid black;
+  box-shadow: none;
 }
-.order-info{
-    width: 550px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 0 50px;
+.order-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0 50px;
 }
-.order-info h2{
-    font-size: 22px;
-    color: #1c1b1b;
-    letter-spacing: 0.2em;
-    font-weight: 500;
+.order-info h2 {
+  font-size: 22px;
+  color: #1c1b1b;
+  letter-spacing: 0.2em;
+  font-weight: 500;
 }
-.order-info p{
-    margin-top: 15px;
-    color: #6a6a6a;
+.order-info p {
+  margin-top: 15px;
+  color: #6a6a6a;
 }
-.qty-contain{
-    display: flex;
-    flex-direction: row;
-    margin-top: 25px;
-    border: 1px solid #6a6a6a;
+.qty-contain {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+  border: 1px solid #6a6a6a;
 }
-.qty-contain span{
-    padding: 10px 20px;
-    font-size: 16px;
+.qty-contain span {
+  padding: 10px 20px;
+  font-size: 16px;
 }
 .qty-contain span:first-child,
-.qty-contain span:last-child{
-    cursor: pointer;
+.qty-contain span:last-child {
+  cursor: pointer;
 }
-.order-info button{
-    font-size: 14px;
-    padding: 14px 28px;
-    width: 100%;
-    margin-top: 20px;
-    text-transform: uppercase;
-    cursor: pointer;
+.order-info button {
+  font-size: 14px;
+  padding: 14px 28px;
+  width: 100%;
+  margin-top: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
-.add-button{
-    background-color: transparent;
-    border: 1px solid #6a6a6a;
-    transition: all 0.2s ease;
+.add-button {
+  background-color: transparent;
+  border: 1px solid #6a6a6a;
+  transition: all 0.2s ease;
 }
-.add-button:hover{
-    background-color: white;
-    color: black;
+.add-button:hover {
+  background-color: white;
+  color: black;
 }
-.buy-button{
-    background-color: black;
-    color: white;
-    border: none;
-    transition: all 0.2s ease;
+.buy-button {
+  background-color: black;
+  color: white;
+  border: none;
+  transition: all 0.2s ease;
 }
-.buy-button:hover{
-    background-color: rgb(43, 40, 40);
+.buy-button:hover {
+  background-color: rgb(43, 40, 40);
 }
-.right-section i{
-    cursor: pointer;
+.right-section i {
+  cursor: pointer;
 }
-.cart-side-bar{
-    width: 400px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: white;
-    z-index: 1001;
-    display: none;
-    opacity: 0;
+.cart-side-bar {
+  margin-left: 50px;
+  width: 100%;
+  max-width: 400px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 1002;
+  display: none;
+  opacity: 0;
 }
-.cart-side-bar.active{
-    opacity: 1;
+.cart-side-bar.active {
+  opacity: 1;
+  display: block;
+}
+.cart-side-bar .header {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-bottom: 1px solid #e0e1dd;
+}
+.cart-side-bar .header p {
+  letter-spacing: 0.2em;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.cart-side-bar .header i {
+  font-size: 25px;
+  cursor: pointer;
+}
+.js-cart-item {
+  width: 100%;
+}
+.item-cart {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  padding: 20px;
+}
+.item-cart .left img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+}
+.right .cart-name {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.right span {
+  font-size: 12px;
+  color: #6a6a6a;
+}
+.edit {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.edit .qty-contain {
+  margin: 0;
+}
+.edit .qty-contain span {
+  padding: 10px 15px;
+  font-size: 14px;
+}
+.remove-button {
+  letter-spacing: 0.2em;
+  color: #6a6a6a;
+  font-size: 10px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.footer-cart {
+  padding: 20px 30px 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.footer-cart h4 {
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer-cart p {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 8px 0;
+}
+.footer-cart button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px 18px;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.total-price {
+  padding-left: 10px;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  z-index: 1001;
+}
+.overlay.active {
+  display: block;
+}
+@media (max-width: 480px) {
+  .order-cart {
     display: block;
-}
-.cart-side-bar .header{
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 30px;
-    border-bottom: 1px solid #e0e1dd;
-}
-.cart-side-bar .header p{
-    letter-spacing: 0.2em;
-    font-size: 16px;
-    text-transform: uppercase;
-}
-.cart-side-bar .header i{
-    font-size: 25px;
-    cursor: pointer;
-}
-.js-cart-item{
-    width: 100%;
-}
-.item-cart{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    padding: 20px;
-}
-.item-cart .left img{
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-}
-.right{
-    display: flex;
-    flex-direction: column;
-}
-.right .cart-name{
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-.right span{
-    font-size: 11px;
-    color: #6a6a6a;
-}
-.edit{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 20px;
-}
-.edit .qty-contain{
-    margin: 0;
-}
-.edit .qty-contain span{
-    padding: 10px 15px;
-    font-size: 14px;
-}
-.remove-button{
-    letter-spacing: 0.2em;
-    color: #6a6a6a;
-    font-size: 10px;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    text-decoration: underline;
-    text-transform: uppercase;
+  }
+  
 }
