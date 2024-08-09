@@ -1,7 +1,7 @@
 const bestSellerContainer = document.querySelector("#best-seller");
 const newArrivalContainer = document.querySelector("#new-arrival");
 const tapButtons = document.querySelectorAll(".js-tap-button");
-const jsonFile = "./homeProduct.json";
+const jsonFile = "../database/homeProduct.json";
 
 function displayProducts(container, productItems) {
   container.innerHTML = ""; // Clear the container before displaying

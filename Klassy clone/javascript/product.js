@@ -2,7 +2,7 @@
 const productContainer = document.querySelector(".js-item-grid");
 const filterBtns = document.querySelectorAll(".filter-button");
 const sidebar = document.querySelector(".side-bar");
-const jsonFile = "./product.json";
+const jsonFile = "../database/product.json";
 
 // Function to display products in the grid
 function displayProducts(productItems) {

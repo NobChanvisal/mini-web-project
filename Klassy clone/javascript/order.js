@@ -20,7 +20,7 @@ function getQueryParam(param) {
 const productId = getQueryParam("productId");
 
 // Fetch product details from JSON file
-fetch("./product.json")
+fetch("../database/product.json")
   .then((response) => response.json())
   .then((data) => {
     const product = data.find((item) => item.id === productId);
