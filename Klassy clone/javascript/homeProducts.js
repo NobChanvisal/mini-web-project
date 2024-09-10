@@ -1,12 +1,12 @@
 const bestSellerContainer = document.querySelector("#best-seller");
 const newArrivalContainer = document.querySelector("#new-arrival");
 const tapButtons = document.querySelectorAll(".js-tap-button");
-const jsonFile = "../database/homeProduct.json";
+
 
 function displayProducts(container, productItems) {
   container.innerHTML = ""; // Clear the container before displaying
   productItems.forEach((product) => {
-    const { id, img,imgRotate, name, price } = product;
+    const { id, img, imgRotate, name, price } = product;
     container.innerHTML += `
       <div class="product-cart">
           <div class="main-image">
@@ -22,7 +22,7 @@ function displayProducts(container, productItems) {
   });
 }
 
-fetch(jsonFile)
+fetch('database/homeProduct.json')
   .then((response) => response.json())
   .then((data) => {
     const bestSellers = data.filter(
@@ -39,9 +39,8 @@ fetch(jsonFile)
         const category = e.currentTarget.dataset.id;
 
         // Toggle active class on buttons
-        document.querySelector('.active')?.classList.remove('active');
-        btn.classList.add('active');
-          
+        document.querySelector(".active")?.classList.remove("active");
+        btn.classList.add("active");
 
         // Show the relevant container
         if (category === "best-seller") {
