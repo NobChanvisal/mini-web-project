@@ -1,10 +1,8 @@
 const Buttons = document.querySelectorAll("button");
-// const btnContain = document.querySelector(".button-contain");
 const Content = document.querySelectorAll(".content");
 
 Buttons.forEach(btns =>{
     btns.addEventListener("click" ,(e)=>{
-        // console.log(e.target.dataset.id);
         const id = e.target.dataset.id;
         if(id){
             //remove active from other buttons
