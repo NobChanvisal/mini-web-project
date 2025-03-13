@@ -1,4 +1,4 @@
-// product.js
+    // product.js
 const productContainer = document.querySelector(".js-item-grid");
 const filterBtns = document.querySelectorAll(".filter-button");
 const sidebar = document.querySelector(".side-bar");
