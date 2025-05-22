@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explanding Card</title>
-</head>
-<body>
-    <div class="slide background-image ronaldoImage active">
-        <h3>Ronaldo</h3>
+  </head>
+  <body>
+    <div
+      class="slide background-image ronaldoImage active"
+      onclick="toggleActive('.ronaldoImage')"
+    >
+      <h3>Ronaldo</h3>
     </div>
-    <div class="slide background-image mbppeImage">
-        <h3>Mbppe</h3>
+    <div
+      class="slide background-image mbppeImage"
+      onclick="toggleActive('.mbppeImage')"
+    >
+      <h3>Mbppe</h3>
     </div>
-    <div class="slide background-image viciusImage">
-        <h3>Vicius Jr</h3>
+    <div
+      class="slide background-image viciusImage"
+      onclick="toggleActive('.viciusImage')"
+    >
+      <h3>Vicius Jr</h3>
     </div>
-    <div class="slide background-image bellingImage">
-        <h3>Bellingham</h3>
+    <div
+      class="slide background-image bellingImage"
+      onclick="toggleActive('.bellingImage')"
+    >
+      <h3>Bellingham</h3>
     </div>
-    <div class="slide background-image gulerImage">
-        <h3>Guler</h3>
+    <div
+      class="slide background-image gulerImage"
+      onclick="toggleActive('.gulerImage')"
+    >
+      <h3>Guler</h3>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

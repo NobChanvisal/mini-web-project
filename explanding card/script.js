@@ -1,14 +1,15 @@
-const Slide = document.querySelectorAll(".slide");
-
-Slide.forEach((slide) =>{
-    slide.addEventListener("click", ()=>{
-        removeActive();
-        slide.classList.add("active");
-    })
-})
-
-function removeActive(){
-    Slide.forEach((slide) =>{
-        slide.classList.remove("active");
-    })
+function toggleActive(selector) {
+  const button = document.querySelector(selector);
+  if (!document.querySelector("active")) {
+    removeActive();
+    button.classList.add("active");
+  } else {
+    button.classList.remove("active");
+  }
+}
+function removeActive() {
+  const prev = document.querySelector(".active");
+  if (prev) {
+    prev.classList.remove("active");
+  }
 }
