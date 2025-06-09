@@ -26,7 +26,6 @@ function displayBooks() {
         <div>${title}</div>
         <div>${numberOfPage}</div>
         <button class="remove-button" onclick="removeBook(${index})">Remove</button>
-        <hr>
       `;
     })
     .join("");
