@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="image-container">
+        <img
+          class="active"
+          id="blue"
+          src="./images/Light blue.jpg"
+          alt="Product Image"
+        />
+        <img id="black" src="./images/black.jpg" alt="" />
+        <img id="gold" src="./images/gold.jpg" alt="" />
+      </div>
+      <div class="card-content">
+        <h3>Product Title</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae
+          ante vel eros fermentum faucibus sit amet euismod lorem.
+        </p>
+        <div class="color-swatches">
+          <button class="swatch active swatch-blue" data-id="blue"></button>
+          <button class="swatch swatch-black" data-id="black"></button>
+          <button class="swatch swatch-gold" data-id="gold"></button>
+        </div>
+        <div class="card-footer">
+          <span>$19.99</span>
+          <button>Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+header h1{
+  padding-bottom: 15px;
+}
+.filter-contain{
+  width: 80%;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.search-bar input{
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.search-bar{
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  border: 1px solid grey;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+.search-bar svg{
+  fill: gray;
+}
+#grid-contain {
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 100px;
+}
+.shoe-card {
+  width: 300px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.shoe-image {
+  max-width: 100%;
+  height: 300px; /* Fixed height for consistency */
+  object-fit: contain; /* Ensures the image fits without cropping */
+  margin-bottom: 10px;
+}
+.shoe-title {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+.shoe-price {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #e67e22;
+  margin-top: 5px;
+
+}
+.prev-price {
+  text-decoration: line-through;
+  color: #777;
+  margin-right: 10px;
+}
+.filters button {
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.filters button.active {
+  background-color: #007bff;
+  color: white;
+}
+svg{
+  width: 16px;
+  height: 16px;
+  
+}
+.rate-img{
+  width: 80px;
+}
+footer{
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.add-tocart-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #007bffcd;
+  border-radius: 100%;
+  cursor: pointer;
+  &:hover{
+    background-color: black;
+  }
+}
+.add-tocart-button svg{
+  color: white;
+}
