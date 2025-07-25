@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #a3a3a3;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #0056b3;
+}
+
+.active {
+  background-color: #003d80;
+  color: white;
+  transform: scale(1.05);
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.meal-card {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.meal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.meal-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.meal-card h3 {
+  margin-top: 10px;
+}
+.menu-icon {
+  text-align: center;
+  display: none;
+}
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-btn {
+    width: 90%;
+    max-width: 300px;
+    font-size: 14px;
+  }
+  .menu-icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  .filter-contain {
+    position: relative;
+  }
+  .filter-buttons {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .filter-buttons.activeIocon {
+    display: flex;
+  }
+  .filter-btn {
+    background-color: white;
+    color: black;
+  }
+}

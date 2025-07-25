@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheMealDB Filter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Food Filter</h1>
+    </header>
+    <div class="filter-contain">
+      <div class="menu-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#1f1f1f"
+        >
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+          />
+        </svg>
+      </div>
+      <div class="filter-buttons">
+        <button class="filter-btn" data-category="Beef">Beef</button>
+        <button class="filter-btn" data-category="Chicken">Chicken</button>
+        <button class="filter-btn" data-category="Seafood">Seafood</button>
+        <button class="filter-btn" data-category="Breakfast">Breakfast</button>
+        <button class="filter-btn" data-category="Side">Side</button>
+        <button class="filter-btn" data-category="Goat">Goat</button>
+        <button class="filter-btn" data-category="Lamb">Lamb</button>
+        <button class="filter-btn" data-category="Pork">Pork</button>
+      </div>
+    </div>
+
+    <div id="meal-results" class="container">
+      <p>Select a category to see meals...</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
