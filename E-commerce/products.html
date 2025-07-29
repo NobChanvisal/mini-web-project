@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/global.css" />
+    <style>
+      .hero-section {
+        padding-top: 82px;
+        height: 50vh;
+        background-color: rgb(230, 230, 230);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .text-content {
+        text-align: center;
+      }
+      .text-content h1 {
+        font-size: 20px;
+        text-transform: uppercase;
+      }
+      .text-content h2 {
+        padding-top: 5px;
+        text-transform: uppercase;
+        font-size: 30px;
+      }
+      .text-content p {
+        margin: 0 auto;
+        padding-top: 5px;
+        max-width: 600px;
+        color: rgb(130, 130, 130);
+      }
+      #product-container {
+        flex: 1;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+      .product-section {
+        width: 100%;
+        display: flex;
+      }
+      aside {
+        width: 200px;
+        background-color: white;
+        padding: 10px;
+        margin: 20px 0;
+      }
+      .brand-filter-group {
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 15px 0;
+        gap: 8px;
+      }
+      .brand-filter-group .brand-button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+      .color-filter-group {
+        padding: 15px 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+      }
+      .color-filter-group .color-button {
+        border: 1px solid gray;
+        height: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body style="background-color: whitesmoke">
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="./index.html"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/2996/2996892.png"
+            alt="Logo"
+            class="logo"
+        /></a>
+        <a href="#" class="nav-item">New</a>
+        <a href="#" class="nav-item">Men</a>
+        <a href="#" class="nav-item">Women</a>
+        <a href="#" class="nav-item">Kids</a>
+        <a href="#" class="nav-item">Sale</a>
+      </div>
+      <div class="nav-right">
+        <div class="search-wrapper">
+          <input type="text" placeholder="Search" class="search-input" />
+          <i class="fas fa-search search-icon"></i>
+        </div>
+        <a href="#" class="nav-item"><i class="fas fa-user"></i></a>
+        <a href="#" class="nav-item"><i class="fas fa-heart"></i></a>
+        <div class="relative inline-flex">
+          <a href="./carts.html" class="nav-item" type="button">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <span
+            class="noticafition hidden absolute top-1 right-0.5 grid h-[8px] w-[8px] translate-x-2/4 -translate-y-2/4 place-items-center rounded-full bg-red-600 py-1 px-1 text-xs text-white"
+          ></span>
+        </div>
+      </div>
+    </nav>
+    <section class="hero-section">
+      <div class="text-content">
+        <h1>New Style</h1>
+        <h2>Here</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s
+        </p>
+      </div>
+    </section>
+    <section class="product-section">
+      <aside>
+        <div>
+          <h1>Brand</h1>
+          <div class="brand-filter-group">
+            <button class="brand-button" data-brand="all">All</button>
+            <button class="brand-button" data-brand="nike">Nike</button>
+            <button class="brand-button" data-brand="adidas">Adidas</button>
+            <button class="brand-button" data-brand="new balance">
+              New Balance
+            </button>
+            <button class="brand-button" data-brand="puma">Puma</button>
+          </div>
+        </div>
+        <div>
+          <h1>Color</h1>
+          <div class="color-filter-group">
+            <button
+              class="color-button"
+              style="
+                background: #3f5efb;
+                background: radial-gradient(
+                  circle,
+                  rgba(63, 94, 251, 1) 0%,
+                  rgba(252, 70, 107, 1) 100%
+                );
+              "
+            ></button>
+            <button
+              class="color-button"
+              data-color="red"
+              style="background-color: red"
+            ></button>
+            <button
+              class="color-button"
+              data-color="white"
+              style="background-color: white"
+            ></button>
+            <button
+              class="color-button"
+              data-color="black"
+              style="background-color: black"
+            ></button>
+            <button
+              class="color-button"
+              data-color="blue"
+              style="background-color: blue"
+            ></button>
+            <button
+              class="color-button"
+              data-color="gold"
+              style="background-color: #eaa64d"
+            ></button>
+          </div>
+        </div>
+      </aside>
+      <div id="product-container"></div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="bg-white text-gray-800 py-8 rounded-t-lg shadow-lg">
+      <div class="container mx-auto px-4">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center md:items-start space-y-6 md:space-y-0"
+        >
+          <!-- Company Info / Logo -->
+          <div
+            class="flex flex-col items-center md:items-start text-center md:text-left"
+          >
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/2996/2996892.png"
+                alt="Logo"
+                class="logo"
+            /></a>
+            <p class="text-gray-600 pt-3 max-w-xs">
+              Crafting digital experiences with passion and precision.
+            </p>
+          </div>
+
+          <!-- Navigation Links -->
+          <div
+            class="grid grid-cols-2 gap-x-8 gap-y-4 text-center md:text-left md:grid-cols-3"
+          >
+            <div>
+              <h3 class="text-lg font-semibold mb-3 text-blue-600">
+                Quick Links
+              </h3>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-blue-600 transition duration-300 rounded-md"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-blue-600 transition duration-300 rounded-md"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-blue-600 transition duration-300 rounded-md"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-blue-600 transition duration-300 rounded-md"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold mb-3 text-blue-600">
+                Resources
+              </h3>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-blue-600 transition duration-300 rounded-md"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-blue-600 transition duration-300 rounded-md"
+                    >FAQ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-blue-600 transition duration-300 rounded-md"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-blue-600 transition duration-300 rounded-md"
+                    >Terms of Service</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold mb-3 text-blue-600">Connect</h3>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-blue-600 transition duration-300 rounded-md"
+                    >Support</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-blue-600 transition duration-300 rounded-md"
+                    >Careers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-blue-600 transition duration-300 rounded-md"
+                    >Press</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Social Media Icons (using Font Awesome) -->
+          <div
+            class="flex flex-col items-center md:items-end text-center md:text-right"
+          >
+            <h3 class="text-lg font-semibold mb-3 text-blue-600">Follow Us</h3>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-gray-600 hover:text-blue-600 transition duration-300 rounded-full p-2 bg-gray-200 hover:bg-gray-300"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.505 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22C17.343 21.128 22 16.991 22 12z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-gray-600 hover:text-blue-600 transition duration-300 rounded-full p-2 bg-gray-200 hover:bg-gray-300"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12.001 0C8.791 0 8.384.032 7.159.09c-1.235.059-2.09.255-2.833.546-.743.291-1.39.704-2.029 1.343-.64.64-1.052 1.286-1.343 2.029-.291.743-.487 1.598-.546 2.833C.032 8.384 0 8.791 0 12.001s.032 3.617.09 4.842c.059 1.235.255 2.09.546 2.833.291.743.704 1.39 1.343 2.029.64.64 1.286 1.052 2.029 1.343.743.291 1.598.487 2.833.546C8.384 23.968 8.791 24 12.001 24s3.617-.032 4.842-.09c1.235-.059 2.09-.255 2.833-.546.743-.291 1.39-.704 2.029-1.343.64-.64 1.052-1.286 1.343-2.029.291-.743.487-1.598.546-2.833.032-1.225.09-1.632.09-4.842s-.032-3.617-.09-4.842c-.059-1.235-.255-2.09-.546-2.833-.291-.743-.704-1.39-1.343-2.029-.64-.64-1.286-1.052-2.029-1.343-.743-.291-1.598-.487-2.833-.546C15.617.032 15.21 0 12.001 0zm0 2.163c3.21 0 3.585.012 4.85.07c1.17.056 1.799.24 2.224.407.425.167.769.395 1.114.74.345.345.573.69.74 1.114.167.425.351 1.054.407 2.224.058 1.265.07 1.64.07 4.85s-.012 3.585-.07 4.85c-.056 1.17-.24 1.799-.407 2.224-.167.425-.395.769-.74 1.114-.345.345-.69.573-1.114.74-.425.167-1.054.351-2.224.407-1.265.058-1.64.07-4.85.07s-3.585-.012-4.85-.07c-1.17-.056-1.799-.24-2.224-.407-.425-.167-.769-.395-1.114-.74-.345-.345-.573-.69-.74-1.114-.167-.425-.351-1.054-.407-2.224-.058-1.265-.07-1.64-.07-4.85s.012-3.585.07-4.85c.056-1.17.24-1.799.407-2.224.167-.425.395-.769.74-1.114.345-.345.69-.573 1.114-.74.425-.167 1.054-.351 2.224-.407 1.265-.058 1.64-.07 4.85-.07zM12.001 7.291c-2.597 0-4.709 2.112-4.709 4.709s2.112 4.709 4.709 4.709 4.709-2.112 4.709-4.709-2.112-4.709-4.709-4.709zm0 7.783c-1.701 0-3.074-1.373-3.074-3.074s1.373-3.074 3.074-3.074 3.074 1.373 3.074 3.074-1.373 3.074-3.074 3.074zm6.82-7.925c-.569 0-1.03-.461-1.03-1.03s.461-1.03 1.03-1.03 1.03.461 1.03 1.03-.461 1.03-1.03 1.03z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-gray-600 hover:text-blue-600 transition duration-300 rounded-full p-2 bg-gray-200 hover:bg-gray-300"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.447 0-6.227 2.78-6.227 6.227 0 .486.052.958.147 1.41-.518-.026-1.036-.08-1.555-.16-4.154-.83-7.828-3.92-10.3-8.868-.54.92-.853 1.984-.853 3.134 0 2.152 1.096 4.053 2.766 5.163-.805-.025-1.56-.247-2.228-.614v.08c0 3.016 2.138 5.516 4.978 6.082-.51.138-1.045.212-1.595.212-.39 0-.766-.034-1.134-.103.793 2.477 3.064 4.27 5.772 4.319-2.097 1.641-4.743 2.624-7.61 2.624-.495 0-.98-.029-1.459-.085 2.707 1.734 5.93 2.744 9.395 2.744 11.275 0 17.402-9.352 17.402-17.402 0-.266-.006-.529-.018-.791.99-.714 1.847-1.608 2.53-2.614z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright and Bottom Text -->
+        <div
+          class="border-t border-gray-300 mt-8 pt-6 text-center text-gray-600 text-sm"
+        >
+          <p>&copy; 2023 YourBrand. All rights reserved.</p>
+          <p class="mt-2">Designed with ❤️ by YourCompany.</p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./javascript/productsPage.js"></script>
+  </body>
+</html>
