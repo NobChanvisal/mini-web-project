@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Summary Order & Payment Details</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <header>
+      <div class="logo">SuperBike</div>
+      <nav>
+        <a class="active" href="./index.html">Home</a>
+        <a href="">Road</a>
+        <a href="">Mountain</a>
+        <a href="">Electronic</a>
+        <a href="">Kid</a>
+      </nav>
+      <div class="icons">
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+            />
+          </svg>
+        </span>
+        <a href="./checkout.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-cart2"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
+            />
+          </svg>
+        </a>
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            width="20"
+            height="20"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+            />
+          </svg>
+        </span>
+      </div>
+    </header>
+  
+    <main class="checkout-container">
+      <!-- Left Column -->
+      <div class="order-summary">
+        <h2 class="checkout-subtitle">Summary Order</h2>
+        <p class="subtitle">
+          Check your item and select your shipping for better experience order
+          item.
+        </p>
+
+        <div class="items-container">
+          <!-- Item 1 -->
+          <div class="item">
+            <div class="item-img-wrapper">
+              <img src="./image/06.jpg" alt="NB 57/40" />
+            </div>
+            <div class="item-info">
+              <div class="item-name">Product 1</div>
+              <div class="item-price">
+                $ 129.00 <span class="item-old-price">$ 189.00</span>
+              </div>
+            </div>
+            <button class="remove-btn">
+              remove
+            </button>
+          </div>
+          <!-- Item 2 -->
+          <div class="item">
+            <div class="item-img-wrapper">
+              <img src="./image/02.jpg" alt="thumb" />
+            </div>
+            <div class="item-info">
+              <div class="item-name">Product 2</div>
+              <div class="item-price">
+                $ 119.00 <span class="item-old-price">$ 179.00</span>
+              </div>
+            </div>
+            <button class="remove-btn">remove</button>
+          </div>
+          <!-- Item 3 -->
+          <div class="item">
+            <div class="item-img-wrapper">
+              <img
+                src="./image/01.jpg"
+                alt="thumb"
+                onerror="
+                  this.src = 'https://via.placeholder.com/60x40?text=Sneaker'
+                "
+              />
+            </div>
+            <div class="item-info">
+              <div class="item-name">Product 3</div>
+              <div class="item-price">
+                $ 149.00 <span class="item-old-price">$ 259.00</span>
+              </div>
+            </div>
+            <button class="remove-btn">remove</button>
+          </div>
+        </div>
+
+        <div class="checkout-subtitle">
+          Available Shipping Method <span class="info-icon">i</span>
+        </div>
+
+     
+        <div class="shipping-option selected">
+          <div class="shipping-content">
+            <img
+              class="shipping-logo"
+              src="https://images.khmer24.co/profiles/pictures/23-06-10/446912ecf334459ab520e0167179401801686380886968255691502.jpg"
+              alt="Fedex"
+            />
+            <div class="shipping-text">
+              <h4>Virak buthams express</h4>
+              <p>Delivery: 2-3 days work</p>
+            </div>
+          </div>
+          <div class="shipping-price">
+            $ 2.00
+            <div class="radio-circle checked"></div>
+          </div>
+        </div>
+
+        <div class="shipping-option" style="background: #fcfcfc">
+          <div class="shipping-content">
+            <img
+              class="shipping-logo"
+              src="https://cdn.shopify.com/app-store/listing_images/0f226995e0a17d76493c21106d0a7f18/icon/CJSN57WbivwCEAE=.jpeg"
+              alt="DHL"
+            />
+            <div class="shipping-text">
+              <h4>J&T express</h4>
+              <p>Delivery: 2-3 days work</p>
+            </div>
+          </div>
+          <div class="shipping-price">
+            $ 2.00
+            <div class="radio-circle"></div>
+          </div>
+        </div>
+        <p class="subtitle" style="margin-top: 20px; margin-bottom: 12px">
+          Available Only phnom penh:
+        </p>
+
+        <div class="shipping-option" style="background: #fcfcfc">
+          <div class="shipping-content">
+            <img
+              class="shipping-logo"
+              src="https://yt3.googleusercontent.com/ytc/AIdro_klN-bH_yVP8gzTFVAduikZar09ZbJrB1Qgpnei6onE=s900-c-k-c0x00ffffff-no-rj"
+              alt="DHL"
+            />
+            <div class="shipping-text">
+              <h4>Grab express</h4>
+              <p>Delivery: 1 days</p>
+            </div>
+          </div>
+          <div class="shipping-price">
+            $ 1.00
+            <div class="radio-circle"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="payment-details">
+        <h2 class="checkout-subtitle">Payment Details</h2>
+        <p class="subtitle">
+          Complete your purchase item by providing your payment details order.
+        </p>
+
+        <!-- detail -->
+        <form action="">
+            <div class="text-box">
+                <label for="">Fullname</label>
+                <input type="text">
+            </div>
+            <div class="text-box">
+                <label for="">Emails</label>
+                <input type="email">
+            </div>
+            <div class="text-box">
+                <label for="">Phone</label>
+                <input type="text">
+            </div>
+            <div class="text-box">
+                <label for="">Address</label>
+                <textarea name="" id="" rows="5"></textarea>
+            </div>
+
+        </form>
+        <div class="pricing-table">
+          <div class="price-row">
+            <span>Subtotal <span class="info-icon">i</span></span>
+            <span>$ 397.00</span>
+          </div>
+          <div class="price-row">
+            <span>Vat (20%)</span>
+            <span>$ 2.89</span>
+          </div>
+          <div class="price-row total">
+            <span>Total</span>
+            <span>$ 399.89</span>
+          </div>
+        </div>
+
+        <button class="pay-button">Pay $ 399.89</button>
+      </div>
+    </main>
+  </body>
+</html>

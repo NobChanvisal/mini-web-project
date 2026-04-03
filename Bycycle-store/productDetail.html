@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">SuperBike</div>
+      <nav>
+        <a class="active" href="./index.html">Home</a>
+        <a href="">Road</a>
+        <a href="">Mountain</a>
+        <a href="">Electronic</a>
+        <a href="">Kid</a>
+      </nav>
+      <div class="icons">
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+            />
+          </svg>
+        </span>
+        <a href="./checkout.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-cart2"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
+            />
+          </svg>
+        </a>
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            width="20"
+            height="20"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+            />
+          </svg>
+        </span>
+      </div>
+    </header>
+    <main class="container">
+      <div class="product-detail-container">
+        <!-- products -->
+        <section>
+          <div class="detail-contents">
+            <!-- Gallery Container -->
+            <div class="gallery-container">
+              <!-- Thumbnails -->
+              <div class="gallery-column">
+                <div class="box-image active">
+                  <img src="./image/01.jpg" alt="Thumb" class="bg-gray-50" />
+                </div>
+                <div class="box-image">
+                  <img src="./image/01a.jpg" alt="Thumb" class="bg-gray-50" />
+                </div>
+                <div class="box-image">
+                  <img src="./image/01b.jpg" alt="Thumb" class="bg-gray-50" />
+                </div>
+                <div class="box-image">
+                  <img src="./image/01c.jpg" alt="Thumb" class="bg-gray-50" />
+                </div>
+              </div>
+              <!-- Main Image -->
+              <div class="main-image">
+                <img src="./image/01.jpg" alt="Adan Chair" class="" />
+              </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+              <h2>Super bike blue</h2>
+              <div class="details">
+                <span class="price">$170.00</span>
+                <del>$200</del>
+                <img src="./image/rate/four-half.png" alt="" />
+                <small>(2 customer reviews)</small>
+              </div>
+
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                accumsan magna rutrum, egestas libero eleifend, rhoncus velit.
+                In luctus, leo at accumsan tempus, urna neque egestas odio, non
+                rutrum dolor justo nec justo. I don't know if it was divine
+                intervention or the kinship of all living things but I tell you
+                Jerry at that moment, I was a marine biologist.
+              </p>
+
+              <!-- Selectors -->
+
+              <div class="color-content">
+                <small>Color</small>
+                <div class="button-filters">
+                  <button
+                    style="background-color: gray"
+                    class="active"
+                  ></button>
+                  <button
+                    style="background-color: blue"
+                    class="w-4 h-4 rounded-full bg-blue-400"
+                  ></button>
+                  <button
+                    style="background-color: red"
+                    class="w-4 h-4 rounded-full bg-red-500"
+                  ></button>
+                  <button
+                    style="background-color: black"
+                    class="w-4 h-4 rounded-full bg-green-600"
+                  ></button>
+                </div>
+              </div>
+
+              <!-- Cart Controls -->
+              <div class="quantity-contents">
+                <small>quantity</small>
+                <div class="quantity-selector">
+                  <button
+                    class="qty-count qty-count--minus"
+                    data-action="minus"
+                    type="button"
+                  >
+                    &minus;
+                  </button>
+                  <input
+                    class="product-qty"
+                    type="text"
+                    name="product-qty"
+                    min="1"
+                    max="10"
+                    value="1"
+                  />
+                  <button
+                    class="qty-count qty-count--add"
+                    data-action="add"
+                    type="button"
+                  >
+                    &plus;
+                  </button>
+                </div>
+              </div>
+
+              <div class="btn-cart">
+                <button class="btn-add-cart">Add to Cart</button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                  <path
+                    d="M11.29 20.66c.2.2.45.29.71.29s.51-.1.71-.29l7.5-7.5c2.35-2.35 2.35-6.05 0-8.41-2.3-2.28-5.85-2.35-8.21-.2-2.36-2.15-5.91-2.09-8.21.2-2.35 2.36-2.35 6.06 0 8.41zM5.21 6.16C6 5.38 7 4.99 8.01 4.99s2.01.39 2.79 1.17l.5.5c.39.39 1.02.39 1.41 0l.5-.5c1.56-1.56 4.02-1.56 5.59 0 1.56 1.57 1.56 4.02 0 5.58l-6.79 6.79-6.79-6.79a3.91 3.91 0 0 1 0-5.58Z"
+                  ></path>
+                </svg>
+              </div>
+              <!-- accordion -->
+              <div class="tabs-container">
+                <div class="accordion-item">
+                  <label for="tab-1" class="accordion-label">
+                    Description
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m4.5 15.75 7.5-7.5 7.5 7.5"
+                      />
+                    </svg>
+                  </label>
+                  <div class="accordion-content">
+                    <p style="margin-bottom: 1rem">
+                      Donec volutpat ornare metus in rutrum exlock. Lacus
+                      ultrices mollis, sapien ut aliquam eros. Donec pulvinar
+                      erat lorem tempus ultrices. Aenean ligula elementum metus,
+                      vitae ultricies ex placerat at.
+                    </p>
+                    <p>
+                      Morbi felis arcu, finibus at euismod eu, consequat eu
+                      ligula. Cras sem massa, luctus eu accumsan nec, posuere
+                      eget libero. Fusce sollicitudin eros nibh hendrerit,
+                      lobortis nisi feugiat.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <label for="tab-2" class="accordion-label">
+                    Specification
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  </label>
+                </div>
+
+                <div class="accordion-item">
+                  <label for="tab-3" class="accordion-label">
+                    Review (2)
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m4.5 15.75 7.5-7.5 7.5 7.5"
+                      />
+                    </svg>
+                  </label>
+                  <div class="accordion-content">
+                    <div class="reviews-container">
+                      <div class="rating-summary">
+                        <div class="stars">
+                          <img src="./image/rate/four-half.png" alt="" />
+                        </div>
+                        <span class="rating-text">4.5 Stars</span>
+                      </div>
+
+                      <h3 class="write-review">Write a Review</h3>
+
+                      <!-- Review 1 -->
+                      <div class="review-item">
+                        <h4>Cuteness</h4>
+
+                        <div class="review-header">
+                          <div class="stars">
+                            <img src="./image/rate/four.png" alt="" />
+                          </div>
+                          <span class="review-user">Panha - Feb 13, 2026</span>
+                        </div>
+
+                        <p>
+                          It is a long established fact that a reader will be
+                          distracted by the readable content of a page when
+                          looking at its layout.
+                        </p>
+                      </div>
+
+                      <!-- Review 2 -->
+                      <div class="review-item">
+                        <h4>Not durable</h4>
+
+                        <div class="review-header">
+                          <div class="stars">
+                            <img src="./image/rate/four.png" alt="" />
+                          </div>
+                          <span class="review-user">kaka - Jan 30, 2026</span>
+                        </div>
+
+                        <p>
+                          It is a long established fact that a reader will be
+                          distracted by the readable content of a page when
+                          looking at its layout.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <label for="tab-4" class="accordion-label">
+                    FAQ'S
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- related products -->
+  
+        <section class="related-products">
+          <h2 class="section-title">Featured Products</h2>
+          <div class="product-grid">
+            <div href="./productDetail.html" class="product">
+              <div class="image-pro">
+                <img src="image/05.jpg" alt="Bike" />
+              </div>
+              <p>Super Bike Green</p>
+              <div class="pricing">
+                <p>$170</p>
+              </div>
+              <img class="rate" src="./image/rate/four-half.png" alt="" />
+            </div>
+            <div href="./productDetail.html" class="product">
+              <div class="image-pro">
+                <img src="image/06.jpg" alt="Bike" />
+              </div>
+              <p>Super Bike White-red</p>
+              <div class="pricing">
+                <p>$130</p>
+              </div>
+              <img class="rate" src="./image/rate/three-half.png" alt="" />
+            </div>
+            <div href="./productDetail.html" class="product">
+              <div class="image-pro">
+                <img src="image/08.jpg" alt="Bike" />
+              </div>
+              <p>Super Bike Light Blue</p>
+              <div class="pricing">
+                <p>$150</p>
+              </div>
+              <img class="rate" src="./image/rate/three-half.png" alt="" />
+            </div>
+            <div href="./productDetail.html" class="product">
+              <div class="label">40% off</div>
+  
+              <div class="image-pro">
+                <img src="image/07.jpg" alt="Bike" />
+              </div>
+              <p>Super Bike Black</p>
+              <div class="pricing">
+                <del>150$</del>
+                <p>$90</p>
+              </div>
+              <img class="rate" src="./image/rate/three.png" alt="" />
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>
+            SuperBike is the leading bicycle manufacturer, providing the best
+            cycling experience.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Bikes</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Telegram</a>
+          </div>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; 2025 SuperBike | All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

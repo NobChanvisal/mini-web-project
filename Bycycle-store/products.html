@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuperBike</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">SuperBike</div>
+      <nav>
+        <a class="active" href="./index.html">Home</a>
+        <a href="">Road</a>
+        <a href="">Mountain</a>
+        <a href="">Electronic</a>
+        <a href="">Kid</a>
+      </nav>
+      <div class="icons">
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+            />
+          </svg>
+        </span>
+        <a href="./checkout.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-cart2"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
+            />
+          </svg>
+        </a>
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            width="20"
+            height="20"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+            />
+          </svg>
+        </span>
+      </div>
+    </header>
+
+    <main class="container">
+      <section>
+        <p class="section-title">All Products</p>
+        <div class="status">
+          <small>Showing 1-10 of 100 results</small>
+          <div class="short">
+            <p >short by</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="product-container">
+          <!-- side bar -->
+          <aside>
+            <div class="sidebar">
+              <p class="sidebar-title">FILTER</p>
+              <div class="filter-tab">
+                <div class="header">
+                  <p>Category</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 15.75 7.5-7.5 7.5 7.5"
+                    />
+                  </svg>
+                </div>
+                <div class="filter-tab-menu">
+                  <div class="filter-tab-item">
+                    <input type="checkbox" id="road" />
+                    <label for="road">Road</label>
+                  </div>
+                  <div class="filter-tab-item">
+                    <input type="checkbox" id="mountain" />
+                    <label for="mountain">Mountain</label>
+                  </div>
+                  <div class="filter-tab-item">
+                    <input type="checkbox" id="hybrid" />
+                    <label for="hybrid">Electronic</label>
+                  </div>
+                  <div class="filter-tab-item">
+                    <input type="checkbox" id="kid" />
+                    <label for="kid">Kid</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- color filter -->
+              <div class="filter-tab">
+                <div class="header">
+                  <p>Color</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 15.75 7.5-7.5 7.5 7.5"
+                    />
+                  </svg>
+                </div>
+                <div class="filter-tab-menu color-grid">
+                  <div class="filter-tab-item">
+                    <span style="background-color: red"></span>
+                    <p>Red</p>
+                  </div>
+                  <div class="filter-tab-item">
+                    <span style="background-color: rgb(82, 82, 240)"></span>
+                    <p>Blue</p>
+                  </div>
+                  <div class="filter-tab-item">
+                    <span style="background-color: green"></span>
+                    <p>Green</p>
+                  </div>
+                  <div class="filter-tab-item">
+                    <span style="background-color: grey"></span>
+                    <p>Grey</p>
+                  </div>
+                  <div class="filter-tab-item">
+                    <span style="background-color: brown"></span>
+                    <p>Brown</p>
+                  </div>
+                  <div class="filter-tab-item">
+                    <span
+                      style="background-color: white; border: 1px solid #ccc"
+                    ></span>
+                    <p>Red</p>
+                  </div>
+                </div>
+              </div>
+              <!-- price filter -->
+              <div class="filter-tab">
+                <div class="header">
+                  <p>Price</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <!-- Sale filter -->
+              <div class="filter-tab">
+                <div class="header">
+                  <p>Sale</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <!-- collections filter -->
+              <div class="filter-tab">
+                <div class="header">
+                  <p>Collections</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <div class="product-section">
+            <div class="product-grid">
+              <a href="./productDetail.html" class="product">
+                <div class="label">30% off</div>
+
+                <div class="image-pro">
+                  <img src="image/01.jpg" alt="Bike" />
+                </div>
+                <p class="title">Super Bike Coffee</p>
+                <div class="pricing">
+                  <del>$200</del>
+                  <p>$170</p>
+                </div>
+                <img class="rate" src="./image/rate/four.png" alt="" />
+              </a>
+              <a href="./productDetail.html" class="product">
+                <div class="image-pro">
+                  <img src="image/02.jpg" alt="Bike" />
+                </div>
+                <p>Super Bike Black-gold</p>
+                <div class="pricing">
+                  <p>$200</p>
+                </div>
+                <img class="rate" src="./image/rate/five.png" alt="" />
+              </a>
+              <a href="./productDetail.html" class="product">
+                <div class="label">50% off</div>
+
+                <div class="image-pro">
+                  <img src="image/03.jpg" alt="Bike" />
+                </div>
+                <p>Super Bike White</p>
+                <div class="pricing">
+                  <del>$100</del>
+                  <p>$50</p>
+                </div>
+                <img class="rate" src="./image/rate/three.png" alt="" />
+              </a>
+              <a href="./productDetail.html" class="product">
+                <div class="image-pro">
+                  <img src="image/04.jpg" alt="Bike" />
+                </div>
+                <p>Super Bike Red</p>
+                <div class="pricing">
+                  <p>$170</p>
+                </div>
+                <img class="rate" src="./image/rate/three-half.png" alt="" />
+              </a>
+              <a href="./productDetail.html" class="product">
+                <div class="image-pro">
+                  <img src="image/05.jpg" alt="Bike" />
+                </div>
+                <p>Super Bike Green</p>
+                <div class="pricing">
+                  <p>$170</p>
+                </div>
+                <img class="rate" src="./image/rate/four-half.png" alt="" />
+              </a>
+              <a href="./productDetail.html" class="product">
+        <div class="out-stock-label">Out of stock</div>
+
+                <div class="image-pro">
+                  <img src="image/06.jpg" alt="Bike" />
+                </div>
+                <p>Super Bike White-red</p>
+                <div class="pricing">
+                  <p>$130</p>
+                </div>
+                <img class="rate" src="./image/rate/three-half.png" alt="" />
+              </a>
+              <a href="./productDetail.html" class="product">
+                <div class="image-pro">
+                  <img src="image/08.jpg" alt="Bike" />
+                </div>
+                <p>Super Bike Light Blue</p>
+                <div class="pricing">
+                  <p>$150</p>
+                </div>
+                <img class="rate" src="./image/rate/three-half.png" alt="" />
+              </a>
+              <a href="./productDetail.html" class="product">
+                <div class="image-pro">
+                  <img src="image/07.jpg" alt="Bike" />
+                </div>
+                <p>Super Bike Black</p>
+                <div class="label">40% off</div>
+                <div class="pricing">
+                  <del>150$</del>
+                  <p>$90</p>
+                </div>
+                <img class="rate" src="./image/rate/three.png" alt="" />
+              </a>
+              <a href="./productDetail.html" class="product">
+                <div class="label">50% off</div>
+
+                <div class="image-pro">
+                  <img src="image/03.jpg" alt="Bike" />
+                </div>
+                <p>Super Bike White</p>
+                <div class="pricing">
+                  <del>$100</del>
+                  <p>$50</p>
+                </div>
+                <img class="rate" src="./image/rate/three.png" alt="" />
+              </a>
+              <a href="./productDetail.html" class="product">
+                <div class="image-pro">
+                  <img src="image/04.jpg" alt="Bike" />
+                </div>
+                <p>Super Bike Red</p>
+                <div class="pricing">
+                  <p>$170</p>
+                </div>
+                <img class="rate" src="./image/rate/three-half.png" alt="" />
+              </a>
+            </div>
+            <div class="pagination">
+              <div class="status-text">
+                <p id="status-text">Showing page 1 of 10</p>
+              </div>
+              <div class="pagination-button">
+                <button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 19.5 8.25 12l7.5-7.5"
+                    />
+                  </svg>
+                </button>
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <p>...</p>
+                <button>10</button>
+
+                <button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>
+            SuperBike is the leading bicycle manufacturer, providing the best
+            cycling experience.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Bikes</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Telegram</a>
+          </div>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; 2025 SuperBike | All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

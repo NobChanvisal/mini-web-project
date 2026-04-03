@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,14 +10,11 @@
     <header>
       <div class="logo">SuperBike</div>
       <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Touring Bikes</a></li>
-          <li><a href="#">Bicycle</a></li>
-          <li><a href="#">Road Bikes</a></li>
-          <li><a href="#">Cycle Pumps</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
+        <a class="active" href="./index.html">Home</a>
+        <a href="">Road</a>
+        <a href="">Mountain</a>
+        <a href="">Electronic</a>
+        <a href="">Kid</a>
       </nav>
       <div class="icons">
         <span>
@@ -34,7 +31,7 @@
             />
           </svg>
         </span>
-        <span>
+        <a href="./checkout.html">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
@@ -47,151 +44,200 @@
               d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
             />
           </svg>
+        </a>
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            width="20"
+            height="20"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+            />
+          </svg>
         </span>
       </div>
     </header>
 
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Largest Bicycle Manufacturer</h1>
-        <p>Choose the best and most exclusive collection of mountain bikes. Lorem ipsum dolor sit amet consectetur adipiscing elit. Vestibulum ut mi ac justo faucibus venenatis.</p>
-        
-        <a href="#" class="btn">Shop Now</a>
-      </div>
-      <img src="image/banner1.png" alt="Mountain Bike" />
-    </section>
+    <main class="container">
+      <section class="hero">
+        <div class="hero-content">
+          <h1>
+            Largest Bicycle <br />
+            Manufacturer
+          </h1>
+          <p>
+            Choose the best and most exclusive collection of mountain bikes.
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Vestibulum
+            ut mi ac justo faucibus venenatis.
+          </p>
+          <a href="./products.html" class="btn">Shop Now</a>
+        </div>
+      </section>
 
-    <section class="about">
-      <img src="image/banner2.png" alt="White Bike" />
-      <div class="about-content">
-        <h2>Best Adventure Tourer Bikes</h2>
-        <p>
-          when an unknown printer took a galley of type and scrambled it to make
-          a type specimen book. It has survived not only five centuries, but
-          also the leap into electronic typesetting, remaining essentially
-          unchanged.
-        </p>
-        <div class="thumbnails">
-          <img src="image/a.png" alt="Bike Detail" />
-          <img src="image/c.png" alt="Bike Detail" />
-          <img src="image/b.png" alt="Bike Detail" />
+      <section class="about">
+        <img src="image/banner2.png" alt="White Bike" />
+        <div class="about-content">
+          <h2>Best Adventure Tourer Bikes</h2>
+          <p>
+            when an unknown printer took a galley of type and scrambled it to
+            make a type specimen book. It has survived not only five centuries,
+            but also the leap into electronic typesetting, remaining essentially
+            unchanged.
+          </p>
+          <div class="thumbnails">
+            <img src="image/a.png" alt="Bike Detail" />
+            <img src="image/c.png" alt="Bike Detail" />
+            <img src="image/b.png" alt="Bike Detail" />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="products">
-      <h2>New Products</h2>
-      <div class="product-grid">
-        <div class="product">
-          <div class="image-pro">
-            <img src="image/01.jpg" alt="Bike" />
-          </div>
-          <p>Super Bike Coffee</p>
-          <span>$200.00</span>
-        </div>
-        <div class="product">
-          <div class="image-pro">
-            <img src="image/02.jpg" alt="Bike" />
-          </div>
-          <p>Super Bike Black-gold</p>
-          <span>$130.00</span>
-        </div>
-        <div class="product">
-          <div class="image-pro">
-            <img src="image/03.jpg" alt="Bike" />
-          </div>
-          <p>Super Bike White</p>
-          <span>$100.00</span>
-        </div>
-        <div class="product">
-          <div class="image-pro">
-            <img src="image/04.jpg" alt="Bike" />
-          </div>
-          <p>Super Bike Red</p>
-          <span>$199.00</span>
-        </div>
-      </div>
-    </section>
+      <section class="products">
+        <h2 class="section-title">New Products</h2>
+        <div class="product-grid">
+          <a href="./productDetail.html" class="product" class="product">
+            <div class="label">30% off</div>
+            <div class="image-pro">
+              <img src="image/01.jpg" alt="Bike" />
+            </div>
+            <p class="title">Super Bike Blue</p>
+            <div class="pricing">
+              <del>$200</del>
+              <p>$170</p>
+            </div>
+            <img class="rate" src="./image/rate/four.png" alt="" />
+          </a>
+          <a href="./productDetail.html" class="product" class="product">
+            <div class="image-pro">
+              <img src="image/02.jpg" alt="Bike" />
+            </div>
+            <p>Super Bike Black-gold</p>
+            <div class="pricing">
+              <p>$200</p>
+            </div>
+            <img class="rate" src="./image/rate/five.png" alt="" />
+          </a>
+          <a href="./productDetail.html" class="product" class="product">
+            <div class="label">50% off</div>
 
-    <section class="promo">
-      <div class="promo-box">
-        <img src="image/banner3.png" alt="" />
+            <div class="image-pro">
+              <img src="image/03.jpg" alt="Bike" />
+            </div>
+            <p>Super Bike White</p>
+            <div class="pricing">
+              <del>$100</del>
+              <p>$50</p>
+            </div>
+            <img class="rate" src="./image/rate/three.png" alt="" />
+          </a>
+          <a href="./productDetail.html" class="product" class="product">
+            <div class="image-pro">
+              <img src="image/04.jpg" alt="Bike" />
+            </div>
+            <p>Super Bike Red</p>
+            <div class="pricing">
+              <p>$170</p>
+            </div>
+            <img class="rate" src="./image/rate/three-half.png" alt="" />
+          </a>
+        </div>
+        <a href="./producs.html" class="view-btn">View More</a>
+      </section>
 
+      <section class="banner">
         <div class="text">
-          <h3>Women's Special Bicycle Sale</h3>
-          <p>Explore a wide selection of bicycles for women.</p>
-          <a href="">view product</a>
+          <h1>Ride into Adventure</h1>
+          <p>The all new anytoure</p>
+          <a href="" class="btn">Learn more</a>
         </div>
-      </div>
-      <div class="promo-box green">
-        <img src="image/banner4.png" alt="" />
-        <div class="text">
-          <h3>Buy Bicycles & Accessories</h3>
-          <p>The finest, huge selection, great offers, best deals.</p>
-          <a href="">view product</a>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="featured">
-      <h2>Featured Products</h2>
-      <div class="product-grid">
-        <div class="product">
-          <div class="image-pro">
-            <img src="image/05.jpg" alt="Bike" />
-          </div>
-          <p>Super Bike Green</p>
-          <span>$110.00</span>
+      <section class="featured">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="product-grid">
+          <a href="./productDetail.html" class="product" class="product">
+            <div class="image-pro">
+              <img src="image/05.jpg" alt="Bike" />
+            </div>
+            <p>Super Bike Green</p>
+            <div class="pricing">
+              <p>$170</p>
+            </div>
+            <img class="rate" src="./image/rate/four-half.png" alt="" />
+          </a>
+          <a href="./productDetail.html" class="product" class="product">
+            <div class="image-pro">
+              <img src="image/06.jpg" alt="Bike" />
+            </div>
+            <p>Super Bike White-red</p>
+            <div class="pricing">
+              <p>$130</p>
+            </div>
+            <img class="rate" src="./image/rate/three-half.png" alt="" />
+          </a>
+          <a href="./productDetail.html" class="product" class="product">
+            <div class="image-pro">
+              <img src="image/08.jpg" alt="Bike" />
+            </div>
+            <p>Super Bike Light Blue</p>
+            <div class="pricing">
+              <p>$150</p>
+            </div>
+            <img class="rate" src="./image/rate/three-half.png" alt="" />
+          </a>
+          <a href="./productDetail.html" class="product" class="product">
+            <div class="label">40% off</div>
+
+            <div class="image-pro">
+              <img src="image/07.jpg" alt="Bike" />
+            </div>
+            <p>Super Bike Black</p>
+            <div class="pricing">
+              <del>150$</del>
+              <p>$90</p>
+            </div>
+            <img class="rate" src="./image/rate/three.png" alt="" />
+          </a>
         </div>
-        <div class="product">
-          <div class="image-pro">
-            <img src="image/06.jpg" alt="Bike" />
-          </div>
-          <p>Super Bike White-red</p>
-          <span>$90.00</span>
-        </div>
-        <div class="product">
-          <div class="image-pro">
-            <img src="image/08.jpg" alt="Bike" />
-          </div>
-          <p>Super Bike Light Blue</p>
-          <span>$130.00</span>
-        </div>
-        <div class="product">
-          <div class="image-pro">
-            <img src="image/07.jpg" alt="Bike" />
-          </div>
-          <p>Super Bike Black</p>
-          <span>$100.00</span>
-        </div>
-      </div>
-    </section>
+        <a href="./products.html" class="view-btn">View More</a>
+      </section>
+    </main>
 
     <footer>
-        <div class="footer-container">
-            <div class="footer-column">
-                <h3>About Us</h3>
-                <p>SuperBike is the leading bicycle manufacturer, providing the best cycling experience.</p>
-            </div>
-            <div class="footer-column">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Bikes</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Follow Us</h3>
-                <div class="social-icons">
-                    <a href="#">Facebook</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">Telegram</a>
-                </div>
-            </div>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>
+            SuperBike is the leading bicycle manufacturer, providing the best
+            cycling experience.
+          </p>
         </div>
-        <p class="footer-bottom">&copy; 2025 SuperBike | All Rights Reserved.</p>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Bikes</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Telegram</a>
+          </div>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; 2025 SuperBike | All Rights Reserved.</p>
     </footer>
   </body>
 </html>
